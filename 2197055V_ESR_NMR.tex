@@ -2,6 +2,7 @@
 \usepackage{graphicx}
 \usepackage{amsmath,amsfonts,amssymb,amsthm,siunitx,bm}
 \numberwithin{equation}{section}
+\newtheorem*{note}{Note}
 
 \begin{document}
 \title{Electron spin resonance and nuclear magnetic resonance}
@@ -87,7 +88,7 @@ The value of $B_0$ could be deduced from the DC current $I_0$ in the coils --- w
 \subsection{Results}
 The following two sections present the results that we obtained.
 
-\subsubsection{Helmholtz coils calibration.}
+\subsubsection{Helmholtz coils calibration.} \label{section: calibration}
 The direct current going through the Hemlhotz coils was varied and the magnetic field $B_0$ at the centre of the coils was recorded. We observed quite large fluctuations of the field for a given current, and therefore 5 different readings were taken and averaged. For the purposes of error analysis, the uncertainty in the mean was then taken to be half the spread of the observed values (as there weren't enough readings to justify using the formula for the standard error in the mean). For the current, the measurement uncertainty was taken to be half the smallest scale division. 
 
 We subsequently performed a weighted straight-line fit to the data. Figure \ref{fig: HC calibration curve} shows the resulting calibration curve with uncertainties indicated by error bars. This curve was used in the second part to convert between measured current and magnetic field applied to the sample. We used the MATLAB's built-in function \texttt{polyval} to estimate the uncertainties in the values of $B_0$ predicted by the curve for a given $I$, based on the goodness of fit.
@@ -99,7 +100,6 @@ We obtained
 where $I$ is in $\si{\ampere}$ and $B_0$ is in $\si{\milli\tesla}$.
 
 \begin{figure}[htbp]
-	\includegraphics{EPR_splitting.png}
 	\label{fig: HC calibration curve}
 \end{figure}
 
@@ -109,7 +109,6 @@ where $I$ is in $\si{\ampere}$ and $B_0$ is in $\si{\milli\tesla}$.
 The frequency in the RF oscillator circuit was varied in steps of $5 \si{\mega\hertz}$, and for each frequency, the current in the Helmholtz coils was scanned over the range $0.1 \si{\ampere}$ to $1.2 \si{\ampere}$ to find the resonance. For a given frequency, the measurement was repeated multiple times to get an idea of the uncertainty in the resonant current. Figure \ref{fig: DPPH resonance} shows the resonance frequency as a function of the field.
 
 \begin{figure}[htbp]
-	\includegraphics{EPR_splitting.png}
 	\label{fig: DPPH resonance}
 \end{figure}
 
@@ -183,9 +182,36 @@ The experimental procedure was analogous to the ESR part of the experiment (see 
 
 
 \subsection{Results}
-\subsubsection{Electromagnet calibration}
-\subsubsection{Measurement of the $g$-factors}
+\subsubsection{Electromagnet calibration.}
+Just like in section (\ref{section: calibration}), we first calibrated our electromagnet to be able to relate current passing through it to the magnetic field.
+Since the electromagnet contained an iron core, its field depended not only the value of the current, but also on whether the current was being increased or decreased. This effect is called \emph{hysteresis} (a dependence of the net magnetization of a ferromagnet on the history of any externally applied magnetic field). 
+
+Therefore, we did our calibration first for an increasing and then a decreasing current. Figure \ref{fig: hysteresis curve} shows the hysteresis curve obtained.
+\begin{note}
+	Only the part of the curve corresponding to increasing current was used in the next section.
+\end{note}
+We fitted a polynomial of degree $2$, $y = ax^2 + bx + c$, to the upper half of the curve (this was the degree that yielded the lowest error estimates on the fit parameters), with
+\begin{align*}
+	a &\approx -16 \pm 1, \\
+	b &\approx 189 \pm 7, \\
+	c &\approx -34 \pm 12.
+\end{align*}
+
+\subsubsection{Measurement of the $g$-factors of Glycerine, Polystyrene and PTFE.}
+
+Figure \ref{fig: NMR resonances} shows the graphs of resonance frequencies as a function of $B_0$ for the 3 different substances, and
+figure \ref{fig: resonance spectra} shows the general shape of the resonance signals as viewed on an oscilloscope.
+
 \subsection{Analysis}
+According to \eqref{eqn: NMR resonance condition}, $\left| \frac{\nu}{B_0} \right|$ should be a constant, equal to $\frac{g \mu_n}{h}$. It follows that $g = \frac{h}{\mu_n} \left( \frac{\nu}{B_0} \right)$. We performed a straight-line fit to our plots in figure \ref{fig: NMR resonances}, and got
+\begin{alignat*}{2}
+    &\left( \frac{\nu}{B_0} \right)_{\text{glycerine}} &&= 0.0422 \pm 0.0002 \; \si{\mega\hertz\per\milli\tesla} \\
+	&g\textsubscript{glycerine} &&= 5.54 \pm 0.03 \\[12pt]
+	&\left( \frac{\nu}{B_0} \right)_{\text{polystyrene}} &&= 0.0433 \pm 0.0001 \; \si{\mega\hertz\per\milli\tesla} \\
+	&g\textsubscript{polystyrene} &&= 5.68 \pm 0.01 \\[12pt]
+	&\left( \frac{\nu}{B_0} \right)_{\text{PTFE}} &&= 0.0407 \pm 0.0001 \; \si{\mega\hertz\per\milli\tesla} \\
+	&g\textsubscript{PTFE} &&= 5.34 \pm 0.01 \\
+\end{alignat*}
 
 \subsection{Discussion}
 
