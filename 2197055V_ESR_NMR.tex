@@ -1,6 +1,7 @@
 \documentclass[a4paper]{jpconf}
 \usepackage{graphicx}
-\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,siunitx,bm}
+
 \begin{document}
 \title{Electron spin resonance and nuclear magnetic resonance}
 
@@ -8,25 +9,67 @@
 
 
 \begin{abstract}
-Electron spin resonance (ESR) and nuclear magnetic resonance (NMR) are two important spectroscopic techniques for studying properties of materials containing particles or atoms with non-zero magnetic moments. In this experiment, we studied ESR on a sample of Diphenyl-Picryl-Hydrazil (DPPH), a paramagnetic substance with an unpaired $e^-$, by measuring the resonant frequency as a function of externally applied magnetic field in order to determine the sample\textquoteright s $g$-factor, which was found to be $g_{\textsubscript{DPPH}} = 2.02 \pm 0.01$.
-Further, we investigated the magnetic properties of ${}^1$H and ${}^{19}$F nuclei in the following substances: glycerine and polystyrene (both of which contain hydrogen), PTFE (which contains fluorine), and polythene, whose composition we wanted to learn about. The experimentally measured $g$-factors were $g_{\textsubscript{glycerine}} = 5.54 \pm 0.03$, $g_{\textsubscript{polystyrene}} = 5.68 \pm 0.01$ and $g_{\textsubscript{PTFE}} = 5.34 \pm 0.01$. Comparison with the results obtained for polythene lead us to postulate the presence of hydrogen in our polythene sample, as confirmed by its chemical formula.
+Electron spin resonance (ESR) and nuclear magnetic resonance (NMR) are two important spectroscopic techniques for studying properties of materials containing particles or atoms with non-zero magnetic moments. In this experiment, we studied ESR on a sample of Diphenyl-Picryl-Hydrazil (DPPH), a paramagnetic substance with an unpaired $e^-$, by measuring the resonant frequency as a function of externally applied magnetic field in order to determine the sample\textquoteright s $g$-factor, which was found to be $g\textsubscript{DPPH} = 2.02 \pm 0.01$.
+Further, we investigated the magnetic properties of ${}^1$H and ${}^{19}$F nuclei in the following substances: glycerine and polystyrene (both of which contain hydrogen), PTFE (which contains fluorine), and polythene, whose composition we wanted to learn about. The experimentally measured $g$-factors were $g\textsubscript{glycerine} = 5.54 \pm 0.03$, $g\textsubscript{polystyrene} = 5.68 \pm 0.01$ and $g\textsubscript{PTFE} = 5.34 \pm 0.01$. Comparison with the results obtained for polythene lead us to postulate the presence of hydrogen in our polythene sample, as confirmed by its chemical formula.
 
 \end{abstract}
 
 \section{Introduction}
 Electron spin resonance (ESR), also referred to as electron paramagnetic resonance spectroscopy      % find reference
-(EPRS), is an important method for studying paramagnetic chemical substances in which the electron magnetic moments don't cancel out, such as organic and inorganic free radicals or transition-metal ion complexes. It can provide detailed information relating to the chemical composition and structure of materials, and therefore finds innumerable applications in biology, chemistry, materials science, medicine and pharmacology, to name just a few.
+(EPRS), is an important method for studying paramagnetic chemical substances in which the electron magnetic moments don't cancel, such as organic and inorganic free radicals or transition-metal ion complexes. It can provide detailed information relating to the chemical composition and structure of materials, and therefore finds innumerable applications in biology, chemistry, materials science, medicine and pharmacology, to name just a few.
 
 Similarly, nuclear magnetic resonance (NMR) exploits the fact that some nuclei possess a non-zero overall nuclear spin, and hence a magnetic moment, to study the properties of materials containing such nuclei. NMR has widespread use and applications, notably in medical imaging --- it underlies MRI (magnetic resonance imaging).
 
 \section{ESR}
 In the first part of the experiment we studied ESR on a sample of Diphenyl-Picryl-Hydrazil (DPPH), which is a paramagnetic substance with a single unpaired $e^-$. The orbital angular momentum of the electron is essentially zero,    % find reference
-and hence its magnetic moment is solely due to the spin angular momentum. This makes it particularly suitable for ESR experiments.
+and hence the molecule\textquoteright s magnetic moment is solely due to the electron\textquoteright s spin angular momentum. This makes it particularly suitable for ESR experiments.
  
 \subsection{Theory}
-In the absence of any external magnetic field (i.e.\ for a free $e^-$), the two possible spin states (``spin up'', and ``spin down'') are degenerate (which means they correspond to the same energy level).
+In the absence of any external magnetic fields (i.e.\ for a free $e^-$), the two possible spin states (``spin up'' and ``spin down'') are degenerate, i.e.\ they have the same energy.
 
-However, energy splitting of the two states can occur when the $e^-$ is placed in an external magnetic field. Indeed, the $e^-$'s spin gives rise to a magnetic moment $\mathbf{\mu}_S$ which will interact with the applied field.
+However, energy splitting of the two states occurs when the $e^-$ is placed in an external magnetic field. Indeed, the $e^-$'s spin gives rise to a magnetic moment $\bm{\mu}_S$ which will interact with the applied field and possess a different energy depending on its orientation. According to quantum mechanics, only two orientations are possible. The magnitude $S$ of the spin vector $\mathbf{S}$ and its two allowed z-components $S_z$, where the z-axis is along the direction of the field, are given by
+\begin{align}
+	S &= \lvert\mathbf{S}\rvert = \sqrt{s(s+1)}\hbar = \tfrac{\sqrt{3}}{2}\hbar,  \quad \text{and} \nonumber \\
+	S_z &= m_s \hbar. \label{eqn: magnetic moment z-projection}
+\end{align}
+where $s=\tfrac12$ is the spin quantum number, $m_s=\pm\tfrac12$ is the secondary spin quantum number, and $\hbar$ is the reduced Planck\textquoteright s constant.
+
+The associated magnetic moment is
+\begin{align}
+	\bm{\mu}_S = - g \frac{\mu_B}{\hbar} \mathbf{S} \label{eqn: magnetic moment}
+\end{align}
+where $g$ is the Land\'e splitting factor, or $g$-factor, and $\mu_B = 9.274 \times 10^{-24} \si{\joule\per\tesla}$ is the Bohr magneton. Note that the magnetic moment points in the opposite direction as the spin~vector~$\mathbf{S}$.
+
+A magnetic moment in a magnetic field $\mathbf{B}$ has potential energy
+\begin{align}
+	E &= - \bm{\mu}_S \cdot \mathbf{B} \nonumber \\
+	  &= - (- g \frac{\mu_B}{\hbar} \mathbf{S})\cdot\mathbf{B} \quad \text{substituting in from \eqref{eqn: magnetic moment}}, \nonumber \\
+	  &= g \frac{\mu_B}{\hbar}S_z \lvert \mathbf{B} \rvert \quad \text{using \eqref{eqn: magnetic moment z-projection}}, \nonumber \\
+	  &= g\mu_Bm_sB \label{eqn: potential energy},
+\end{align}
+where $B$ denotes the magnitude of the magnetic field (so that $\mathbf{B} = B \, \mathbf{e_z}$).
+
+Equation \eqref{eqn: potential energy} shows that the two orientations no longer have the same energy --- the one whose magnetic moment is aligned with the field (or equivalently whose spin points in the direction opposite to the field, i.e.\ having $m_s = -\tfrac12$) has a lower potential energy than the one whose magnetic moment is anti-aligned with the field---, as depicted in figure \ref{fig: energy splitting}. The energy difference between the two levels is 
+\begin{equation}
+	\Delta E = g \mu_B B. \label{eqn: energy difference}
+\end{equation}
+
+In thermal equilibrium, the spins are distributed according to the Boltzmann distribution
+\[
+    \frac{N_{+\tfrac12}}{N_{-\tfrac12}} = \exp(- \frac{\Delta E}{k_B T}),
+\]
+where $k_B$ is the Boltzmann\textquoteleft s constant, and $N_{+\tfrac12}$ and $N_{+\tfrac12}$ are the number of spins in the higher and lower states respectively. 
+
+If the conditions are such that there are more spins in the lower state than the upper state, transitions can be induced by supplying energy to the $e^-$s, e.g.\ by irradiating them with electromagnetic (EM) waves with the right frequency. The energy of an EM wave is given by $E = h \nu$, where $\nu$ is the frequency, so the resonance condition is
+\begin{equation}
+	h\nu = g\mu_B B. \label{eqn: resonance condition}
+\end{equation}
+
+\begin{figure}[htbp]
+	\includegraphics{EPR_splitting.png}
+	\caption{Energy splitting of the two spin states of an $e^-$ placed in an external magnetic field $\mathbf{B}$.}
+	\label{fig: energy splitting}
+\end{figure}
 
 \subsection{Experimental method}
 
