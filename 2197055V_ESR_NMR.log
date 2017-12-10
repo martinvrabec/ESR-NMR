@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.10)  10 DEC 2017 18:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.10)  10 DEC 2017 19:30
 entering extended mode
 **./2197055V_ESR_NMR.tex
 (2197055V_ESR_NMR.tex
@@ -605,7 +605,7 @@ spin states of an $\OML/cmm/m/it/10.95 e[]$ \OT1/cmr/m/n/10.95 placed in an ext
 ernal
  []
 
-[3 <./EPR_splitting.png>] (2197055V_ESR_NMR.aux)
+[3 <./EPR_splitting.png>] [4] (2197055V_ESR_NMR.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.78749pt have occurred.
@@ -637,9 +637,9 @@ sfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 /cmsy9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
 
-Output written on 2197055V_ESR_NMR.pdf (3 pages, 211390 bytes).
+Output written on 2197055V_ESR_NMR.pdf (4 pages, 218740 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
+ 93 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
