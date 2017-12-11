@@ -50,7 +50,7 @@ A magnetic moment $\bm{\mu}_S$ in a field $\mathbf{B} = B \, \mathbf{e_z}$ (wher
 	  = g\mu_Bm_sB \label{eqn: potential energy}.
 \end{equation}
 
-Equation \eqref{eqn: potential energy} shows that the two orientations ($m_s = \pm\tfrac12$) no longer have the same energy --- the one whose magnetic moment is aligned with the field (or equivalently whose spin points in the direction opposite to the field, i.e.\ $m_s = -\tfrac12$) has a lower potential energy than the one whose magnetic moment is anti-parallel to the field ---, as depicted in figure \ref{fig: energy splitting}. The energy difference between the two levels is 
+Equation \eqref{eqn: potential energy} shows that the two orientations ($m_s = \pm\tfrac12$) no longer have the same energy --- the one whose magnetic moment is aligned with the field (or equivalently whose spin points in the direction opposite to the field, i.e.\ $m_s = -\tfrac12$) has a lower potential energy than the one whose magnetic moment is anti-parallel to the field, as depicted in figure \ref{fig: energy splitting}. The energy difference between the two levels is 
 \begin{equation}
 	\Delta E = g \mu_B B. \label{eqn: energy difference}
 \end{equation}
@@ -70,12 +70,12 @@ In thermal equilibrium, the spins are distributed according to the Boltzmann dis
 \]
 where $k_B$ is Boltzmann\textquoteright s constant, and $N_{\pm\tfrac12}$ are the number of spins in the higher and lower states, respectively. 
 
-If there is a predominance of spins in the lower state, transitions can be induced by supplying energy to the sample, for instance by irradiating it with electromagnetic (EM) radiation of the right frequency $\nu$. The energy of an EM wave is $E = h \nu$, where $h$ is Planck's constant, so the condition for resonance, using \eqref{eqn: energy difference}, can be stated as
+If there is a predominance of spins in the lower state, transitions can be induced by supplying energy to the sample, for instance by irradiating it with electromagnetic (EM) radiation of the right frequency $\nu$. The energy of an EM wave is $h \nu$, where $h$ is Planck's constant, so the condition for resonance, using \eqref{eqn: energy difference}, can be stated as
 \begin{equation}
 	h\nu = g\mu_B B. \label{eqn: resonance condition}
 \end{equation}
 
-In a real material, an electron ``feels'' also the fields produced by any surrounding magnetic nuclei and/or other electrons, whose effect can be interpreted in terms of a shift in the $g$-factor compared to the free-electron value, and in this particular experiment, we were measuring the $g$-value of DPPH. In addition, the chemical environment also has an effect on the shape of the resonance signal and its line width, amongst other things, which gives an indication of how ESR can be used to infer information about the chemical composition and structure of materials. 
+In a real material, an electron ``feels'' also fields produced by any surrounding magnetic nuclei and/or other electrons, whose effect can be interpreted in terms of a shift in the $g$-factor compared to the free-electron value, and in this particular experiment, we were measuring the $g$-value of DPPH. In addition, the chemical environment also has an effect on the shape of the resonance signal and its line width, amongst other things, which gives an indication of how ESR can be used to infer information about the chemical composition and structure of materials. 
 
 \subsection{Experimental method}\label{section: method}
 % Insert figure
@@ -151,8 +151,6 @@ However, for our particular coils, the expected value of the gradient was $4.23$
 
 Possible sources of error were the difficulty in making sure that the Hall probe was oriented perpendicularly to the measured field (i.e.\ parallel to the coils), and that it was located at the exact position where the sample was later placed. We also couldn't be sure whether the Hall probe itself was calibrated correctly (as we didn't obtain the expected result when we checked with a standard magnet), and whether we zeroed it at a point with no magnetic field. This could have introduced a systematic offset. A source of statistical errors were the random fluctuations in the magnetic field as well as in the response of the probe over time (e.g.\ due to warming up of the equipment or other reasons).
 
-Our measurement of the DPPH resonance confirmed the linear relationship predicted by \eqref{eqn: resonance condition} between the magnetic field and the resonance frequency. This shows that, indeed, an energy splitting occurs when the sample is placed in an external field, that this creates two separate energy levels such that the energy difference between them scales linearly with the applied field, and that energy transitions can be induced by supplying EM energy of the correct frequency. 
-
 The accepted value for the $g$-factor of DPPH is
 \[
 	g_{\textsubscript{DPPH, th}} = 2.0036.
@@ -163,8 +161,6 @@ Compare this with the theoretical value for the spin $g$-factor of a free $e^-$,
 	g_{e,\text{ th}} = 2.002319.
 \]
 This is slightly different from both the accepted and our experimental value for $g_{\textsubscript{DPPH}}$, which, as explained in the section \ref{section: theory}, could stem from the effect of the chemical surrounding of the unpaired $e^-$. Nevertheless, the values are relatively close, showing in particular that the assumption that we can neglect the orbital angular momentum of the $e^-$, and attribute the molecule's magnetic moment solely to the intrinsic spin is largely justified.
-
-An increase in the precision of our findings could have been achieved by taking further repeated measurements, as the statistical errors due to random fluctuations were quite significant, but also by using a stronger $\mathbf{B}$ field, thus increasing the energy difference between the two spin states and reducing the relative uncertainty, and/or by operating at lower temperatures, both of which would have potentially resulted in a sharper resonance signal with a reduced line width.
 
 
 \section{NMR} 
@@ -179,7 +175,7 @@ The $g$-factor again depends on the chemical environment and bond structure (so-
 
 All of our samples had $S = \tfrac{1}{2}$, which meant there were only two possible spin levels, and the condition for resonance was 
 \begin{equation}\label{eqn: NMR resonance condition}
-	h\nu = \Delta E = -g \mu_n B0.
+	h\nu = \Delta E = -g \mu_n B_0.
 \end{equation}
 
 
@@ -244,6 +240,9 @@ According to \eqref{eqn: NMR resonance condition}, $\left| \frac{\nu}{B_0} \righ
 \subsection{Discussion}
 
 \section{Conclusion}
+Our measurements of resonant absorption confirmed the linear relationship predicted by \eqref{eqn: resonance condition} and \eqref{eqn: NMR resonance condition} between the magnetic field and the resonance frequency. They showed that, indeed, in both ESR and NMR, an energy splitting occurs when the sample is placed in an external field, that this creates separate energy levels such that the energy difference between them scales linearly with the applied field, and that energy transitions can be induced by supplying EM energy of the correct frequency. 
+
+An increase in the precision of our findings could have been achieved by taking further repeated measurements, as the statistical errors due to random fluctuations were quite significant, but also by using stronger $\mathbf{B}$ fields, thus increasing the energy differences between the spin states and reducing the relative uncertainty, and/or by operating at lower temperatures, both of which would have potentially resulted in sharper resonance signals with a reduced line width.
 
 \section*{References}
 \begin{thebibliography}{9}
