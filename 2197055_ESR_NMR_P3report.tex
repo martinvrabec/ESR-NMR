@@ -9,8 +9,8 @@
 \author{2197055}
 
 \begin{abstract}
-Electron spin resonance (ESR) and nuclear magnetic resonance (NMR) are two important spectroscopic techniques for probing properties of materials containing constituents with non-zero permanent magnetic moments capable of resonant absorption of electromagnetic energy --- electronic systems in the case of ESR and atomic nuclei in the case of NMR. In this experiment, we studied ESR on a sample of Diphenyl-Picryl-Hydrazil (DPPH), a paramagnetic organic molecule with an unpaired $e^-$, by means of measuring the resonant frequency as a function of externally applied magnetic field in order to determine the sample\textquoteright s $g$-factor, which was found to be $g\textsubscript{DPPH} = 2.02 \pm 0.01$.
-Further, we investigated the magnetic properties of ${}^1$H and ${}^{19}$F nuclei in the following substances: glycerine, polystyrene (both of which contain hydrogen), PTFE (which contains fluorine), and polythene, whose composition we wanted to infer. The experimentally measured $g$-factors were $g\textsubscript{glycerine} = 5.54 \pm 0.03$, $g\textsubscript{polystyrene} = 5.68 \pm 0.01$ and $g\textsubscript{PTFE} = 5.34 \pm 0.01$. Comparison with the results obtained for polythene lead us to postulate the presence of hydrogen in our polythene sample, as confirmed by its chemical formula.
+Electron spin resonance (ESR) and nuclear magnetic resonance (NMR) are two important spectroscopic techniques for probing properties of materials containing constituents with non-zero permanent magnetic moments capable of resonant absorption of electromagnetic energy --- electronic systems in the case of ESR and atomic nuclei in the case of NMR. In this experiment, we studied ESR on a sample of Diphenyl-Picryl-Hydrazil (DPPH), a paramagnetic organic molecule with an unpaired $e^-$, by means of measuring the resonant frequency as a function of externally applied magnetic field, in order to determine the sample\textquoteright s $g$-factor, which was found to be $g\textsubscript{DPPH} = 2.02 \pm 0.01$.
+Further, we investigated the magnetic properties of ${}^1$H and ${}^{19}$F nuclei in the following substances: glycerine, polystyrene (both of which contain hydrogen), PTFE (which contains fluorine), and polythene, whose composition we wanted to learn about. The experimentally measured $g$-factors were $g\textsubscript{glycerine} = 5.54 \pm 0.03$, $g\textsubscript{polystyrene} = 5.68 \pm 0.01$ and $g\textsubscript{PTFE} = 5.34 \pm 0.01$. Comparison with the results obtained for polythene lead us to postulate the presence of hydrogen in our polythene sample, as confirmed by its chemical formula.
 \end{abstract}
 
 \section{Introduction}
@@ -28,9 +28,9 @@ and hence the molecule\textquoteright s total magnetic moment is solely due to t
 \subsection{Theory}\label{section: theory}
 In the absence of any external magnetic fields (i.e.\ for a free $e^-$), the two possible spin states (``spin up'' and ``spin down'') are degenerate --- they have the same energy.
 
-However, energy \emph{splitting} of the two states occurs when the electron is placed in a magnetic field. Indeed, the electron's spin gives rise to a magnetic moment $\bm{\mu}_S$ which interacts with the applied field and possesses a different energy depending on its relative spatial orientation. 
+However, \emph{energy splitting} occurs when the electron is placed in a magnetic field. Indeed, the intrinsic spin gives rise to a magnetic moment $\bm{\mu}_S$ which interacts with the applied field and possesses a different energy depending on its relative spatial orientation. 
 
-According to quantum mechanics, only two configurations are possible. The magnitude $S$ of the spin vector, $\mathbf{S}$, and its two allowed $z$-components $S_z$ (where the $z$-axis is defined to lie along the direction in which the field is pointing), are respectively given by
+According to quantum mechanics, only two configurations are possible. The magnitude $S$ of the spin vector $\mathbf{S}$, and its two allowed $z$-components $S_z$ (where the $z$-axis is defined to lie along the direction of the field), are respectively given by
 \begin{align}
 	S &= \lvert\lvert\mathbf{S}\rvert\rvert = \sqrt{s(s+1)}\hbar = \tfrac{\sqrt{3}}{2}\hbar,  \quad \text{and} \nonumber \\
 	S_z &= m_s \hbar. \label{eqn: magnetic moment z-projection}
@@ -41,16 +41,16 @@ The associated magnetic moment is
 \begin{align}
 	\bm{\mu}_S = - g \frac{\mu_B}{\hbar} \mathbf{S} \label{eqn: magnetic moment}
 \end{align}
-where $g$ is the Land\'e splitting factor, or $g$-factor, which for a free electron has the value $g_e = 2.002319$, and $\mu_B = 9.274 \times 10^{-24} \si{\joule\per\tesla}$ is the Bohr magneton. Note that the magnetic moment points in the opposite direction as the spin~vector~$\mathbf{S}$ due to the electron's negative charge.
+where $g$ is the Land\'e splitting factor, or $g$-factor (which for a free electron has the value $g_e = 2.002319$), and $\mu_B = 9.274 \times 10^{-24} \si{\joule\per\tesla}$ is the Bohr magneton. 
 
-A magnetic moment in a field $\mathbf{B} = B \, \mathbf{e_z}$ (where $\mathbf{e_z}$ is the unit vector in the $z$-direction) has potential energy
+A magnetic moment $\bm{\mu}_S$ in a field $\mathbf{B} = B \, \mathbf{e_z}$ (where $\mathbf{e_z}$ is the unit vector in the $z$-direction) has potential energy
 \begin{equation}
 	E = - \bm{\mu}_S \cdot \mathbf{B} \underset{\text{\eqref{eqn: magnetic moment}}}{=}  - (- g \frac{\mu_B}{\hbar} \mathbf{S})\cdot\mathbf{B}
 	  \underset{\text{\eqref{eqn: magnetic moment z-projection}}}{=} g \frac{\mu_B}{\hbar}S_z B 
 	  = g\mu_Bm_sB \label{eqn: potential energy}.
 \end{equation}
 
-Equation \eqref{eqn: potential energy} shows that the two orientations ($m_s = \pm\tfrac12$) no longer have the same energy --- the one whose magnetic moment is aligned with the field (or equivalently whose spin points in the direction opposite to the field, i.e.\ having $m_s = -\tfrac12$) has a lower potential energy than the one whose magnetic moment is anti-parallel to the field ---, as depicted in figure \ref{fig: energy splitting}. The energy difference between the two levels is 
+Equation \eqref{eqn: potential energy} shows that the two orientations ($m_s = \pm\tfrac12$) no longer have the same energy --- the one whose magnetic moment is aligned with the field (or equivalently whose spin points in the direction opposite to the field, i.e.\ $m_s = -\tfrac12$) has a lower potential energy than the one whose magnetic moment is anti-parallel to the field ---, as depicted in figure \ref{fig: energy splitting}. The energy difference between the two levels is 
 \begin{equation}
 	\Delta E = g \mu_B B. \label{eqn: energy difference}
 \end{equation}
@@ -70,18 +70,20 @@ In thermal equilibrium, the spins are distributed according to the Boltzmann dis
 \]
 where $k_B$ is Boltzmann\textquoteright s constant, and $N_{\pm\tfrac12}$ are the number of spins in the higher and lower states, respectively. 
 
-If there are more spins in the lower than the upper state, transitions can be induced by supplying energy, e.g.\ by irradiating the sample with electromagnetic (EM) radiation with the right frequency $\nu$. The energy of an EM wave is $E = h \nu$, where $h$ is Planck's constant, so the condition for resonance, given \eqref{eqn: energy difference}, can be stated as
+If there is a predominance of spins in the lower state, transitions can be induced by supplying energy to the sample, for instance by irradiating it with electromagnetic (EM) radiation of the right frequency $\nu$. The energy of an EM wave is $E = h \nu$, where $h$ is Planck's constant, so the condition for resonance, using \eqref{eqn: energy difference}, can be stated as
 \begin{equation}
 	h\nu = g\mu_B B. \label{eqn: resonance condition}
 \end{equation}
 
-In a real material, an electron ``feels'' also the fields produced by any surrounding (magnetic) nuclei and/or other electrons. The effect of the surroundings can be interpreted as a shift in the $g$-value appearing in equation \eqref{eqn: magnetic moment} compared to the free-electron value. In this particular experiment, we measured the $g$-value of DPPH. In addition, the chemical environment also has an effect on the shape of the resonance signal and its line width, amongst other things. This gives an indication of how ESR can be used to infer information about the chemical composition and structure of materials. 
+In a real material, an electron ``feels'' also the fields produced by any surrounding magnetic nuclei and/or other electrons, whose effect can be interpreted in terms of a shift in the $g$-factor compared to the free-electron value, and in this particular experiment, we were measuring the $g$-value of DPPH. In addition, the chemical environment also has an effect on the shape of the resonance signal and its line width, amongst other things, which gives an indication of how ESR can be used to infer information about the chemical composition and structure of materials. 
 
 \subsection{Experimental method}\label{section: method}
 % Insert figure
-The DPPH sample was placed in a uniform magnetic field generated by two parallel vertical Helmholtz coils (HCs) connected to a DC current supply. The sample was inserted into another coil connected to an RF circuit oscillating at an adjustable frequency $\nu$, irradiating the sample with energy $h\nu$. The magnetic field produced by the HCs was varied by changing the current, and resonance was detected with an oscilloscope thanks to an observable voltage change in the RF circuit that occurred each time the condition \eqref{eqn: resonance condition} was met for a particular (fixed) frequency, due to the change of the RF coil's permeability when the sample was absorbing energy. The measurement was repeated for a number of different frequencies.  
+The DPPH sample was placed in a uniform magnetic field generated by two parallel vertical Helmholtz coils (HCs) connected to a DC current supply. The sample was inserted into another coil connected to an RF circuit oscillating at an adjustable frequency $\nu$, irradiating the sample with energy $h\nu$. The magnetic field produced by the HCs was varied by changing the current, and resonance was detected with an oscilloscope thanks to an observable voltage change in the RF circuit that occurred each time the condition \eqref{eqn: resonance condition} was met for a particular (fixed) frequency. The measurement was repeated for a number of different frequencies.  
 
-For an $e^-$ with only two possible spin states, it would be necessary to match the RF frequency and the current in the HCs with considerable accuracy to obtain resonance. Also, once the population of the spin states has been inverted, the sample can no longer absorb more energy before enough electrons have returned to the lower state, so they need to be excited at a rate slower than the relaxation time (the time needed for the electrons to de-excite and return to thermal equilibrium via spin-spin and spin-lattice interactions). The solution to both problems was to superimpose a ($50 \si{\hertz}$) modulation (AC) current on the DC component going into the HCs, resulting in a sinusoidally-varying modulation magnetic field. The total field $\mathbf{B}_{total}$ was then the superposition of the two, and thus oscillated around a central value $B_0$. If the resonance condition \eqref{eqn: resonance condition} was satisfied for some value of $\mathbf{B}_{total}$ during this oscillation, a resonance signal was observed, twice during the cycle at symmetric positions (provided that the phase lag between the modulation signal and the sample response signal was correctly accounted for). By adjusting the DC current, it was possibly to make the resonance occur precisely at the point when the modulation field dropped to zero and the field was equal simply to $B_0$, i.e.\ it was the $B_0$ that satisfying \eqref{eqn: resonance condition} for the given frequency.
+For an $e^-$ with only two possible spin states, it would be necessary to match the RF frequency and the current in the HCs with considerable accuracy to obtain resonance. Also, once the population of the spin states has been inverted, the sample can no longer absorb more energy before enough electrons have returned to the lower state, so they need to be excited at a rate slower than the relaxation time (the time needed for the electrons to de-excite and return to thermal equilibrium via spin-spin and spin-lattice interactions). 
+
+A solution to both issues was to superimpose a ($50 \si{\hertz}$) modulation (AC) current on the DC component going into the HCs, resulting in a sinusoidally-varying modulation magnetic field. The total field $\mathbf{B}_{total}$ was then the superposition of the two, and thus oscillated around a central value $B_0$. If the resonance condition \eqref{eqn: resonance condition} was satisfied for some value of $\mathbf{B}_{total}$ during this oscillation, a resonance signal was observed, twice during the cycle at symmetric positions (provided that the phase lag between the modulation signal and the sample response signal was correctly accounted for). By adjusting the DC current, it was possibly to make the resonance occur precisely at the point when the modulation field dropped to zero and the field was equal simply to $B_0$, i.e.\ it was the $B_0$ that satisfying \eqref{eqn: resonance condition} for the given frequency.
 
 The value of $B_0$ could be deduced from the DC current $I_0$ in the coils --- we created a calibration curve of $B_0$ as a function of $I_0$ using a Hall probe sensor to measure the magnetic field in the centre of the coil set-up.
 
@@ -138,31 +140,31 @@ Substituting into \eqref{eqn: gradient} yields
 (where the uncertainty in the final value has been computed, given that $h$ and $\mu_B$ are constants, simply by multiplying the error in the gradient by $h / \mu_B$ ).
 
 \subsection{Discussion}
-For a pair of Helmholtz coils separated by a distance equal to their radius, electromagnetic theory predicts that the value of the field at the centre should obey approximately
+For a pair of Helmholtz coils separated by a distance equal to their radius, the theory of electromagnetism predicts that the value of the field at the centre should obey approximately
 \[
 	B_0 = \mu_0 \left(\frac45\right)^{\tfrac32} \frac{n}{r} I,
 \]
 where $\mu = 4\pi\times10^{-7} \; \si{\volt\s\ampere\tothe{-1}\meter\tothe{-1}}$, $n$ is the number of turns per coil, and $r$ is their radius.
 
-This shows that the expected relationship between $I$ and $B_0$ was linear, as confirmed by our data (see figure \ref{fig: HC calibration curve}).
-However, for our particular coils, the expected value of the gradient was $4.23$, which does not agree with the value that we obtained experimentally, i.e.\ $3.73 \pm 0.01$. This could be due to the fact that the separation of the coils might not have been exactly equal to their radius. Due to such possible differences in our set-up from the idealised case, we used the experimentally obtained calibration curve in the subsequent sections, not the theoretical one. Any error in the calibration curve therefore represents a systematic error in the results obtained thereafter.
+This shows that the expected relationship between $I$ and $B_0$ is linear, as confirmed by our data (see figure \ref{fig: HC calibration curve}).
+However, for our particular coils, the expected value of the gradient was $4.23$, which does not agree with the one we obtained experimentally, i.e.\ $3.73 \pm 0.01$. This could be due to the fact that the separation of the coils might not have been exactly equal to their radius. Due to such possible differences in our set-up from the idealised case, we used the experimentally obtained calibration curve in subsequent calculations, not the theoretical one. Any error in the calibration curve therefore represents a systematic error in the results obtained thereafter.
 
-Possible sources of error were the difficulty in making sure that the Hall probe was oriented perpendicularly to the measured field (i.e.\ parallel to the coils), and that it was located at the exact position where the sample was later placed. We also couldn't be sure whether the Hall probe itself was calibrated correctly (as we didn't obtain the expected result when we checked with a standard magnet), and whether we zeroed it at a point with no magnetic field. This could have introduced a systematic offset. A source statistical errors were the random fluctuations in the magnetic field and in the response of the probe over time (e.g.\ due to warming up of the equipment).
+Possible sources of error were the difficulty in making sure that the Hall probe was oriented perpendicularly to the measured field (i.e.\ parallel to the coils), and that it was located at the exact position where the sample was later placed. We also couldn't be sure whether the Hall probe itself was calibrated correctly (as we didn't obtain the expected result when we checked with a standard magnet), and whether we zeroed it at a point with no magnetic field. This could have introduced a systematic offset. A source of statistical errors were the random fluctuations in the magnetic field as well as in the response of the probe over time (e.g.\ due to warming up of the equipment or other reasons).
 
-Our measurement of the DPPH resonance confirmed the linear relationship predicted by \eqref{eqn: resonance condition} for the magnetic field and the resonance frequency. This shows that, indeed, an energy splitting occurs when the sample is placed in an external field, that this creates two separate energy levels such that the energy difference between them scales linearly with the applied field, and that energy transitions can be induced by supplying EM energy of the correct frequency. 
+Our measurement of the DPPH resonance confirmed the linear relationship predicted by \eqref{eqn: resonance condition} between the magnetic field and the resonance frequency. This shows that, indeed, an energy splitting occurs when the sample is placed in an external field, that this creates two separate energy levels such that the energy difference between them scales linearly with the applied field, and that energy transitions can be induced by supplying EM energy of the correct frequency. 
 
 The accepted value for the $g$-factor of DPPH is
 \[
 	g_{\textsubscript{DPPH, th}} = 2.0036.
 \]
 Our value lies within $2\sigma$ of this value, and is therefore in reasonable agreement.
-Compare this with the theoretical value for the $g$-factor due to the spin of a free $e^-$
+Compare this with the theoretical value for the spin $g$-factor of a free $e^-$, which is
 \[
 	g_{e,\text{ th}} = 2.002319.
 \]
-This is slightly different from both the accepted and our experimental value for $g_{\textsubscript{DPPH}}$, which, as explained in the (\ref{section: theory}) theory section, could stem from the effect of the chemical surrounding of the unpaired $e^-$. Nevertheless, the values are relatively close, showing in particular that the assumption that we can neglect the orbital angular momentum of the $e^-$ and attribute the molecule's magnetic moment solely to the spin angular momentum was largely justified.
+This is slightly different from both the accepted and our experimental value for $g_{\textsubscript{DPPH}}$, which, as explained in the section \ref{section: theory}, could stem from the effect of the chemical surrounding of the unpaired $e^-$. Nevertheless, the values are relatively close, showing in particular that the assumption that we can neglect the orbital angular momentum of the $e^-$, and attribute the molecule's magnetic moment solely to the intrinsic spin is largely justified.
 
-An increase in the precision of our measurements could have been achieved by taking further repeated measurements for a given set of conditions in order to deal with statistical errors due to random fluctuations, but also by using a stronger $\mathbf{B}$ field, thus increasing the energy difference between the two spin states and hence reducing the relative uncertainty in this difference, and/or by operating at lower temperatures, both of which would possibly result in a sharper resonance signal (i.e.\ a reduced line width).
+An increase in the precision of our findings could have been achieved by taking further repeated measurements, as the statistical errors due to random fluctuations were quite significant, but also by using a stronger $\mathbf{B}$ field, thus increasing the energy difference between the two spin states and reducing the relative uncertainty, and/or by operating at lower temperatures, both of which would have potentially resulted in a sharper resonance signal with a reduced line width.
 
 
 \section{NMR} 

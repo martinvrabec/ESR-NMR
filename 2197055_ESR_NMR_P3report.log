@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.10)  11 DEC 2017 21:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.10)  11 DEC 2017 22:13
 entering extended mode
 **./2197055_ESR_NMR_P3report.tex
 (2197055_ESR_NMR_P3report.tex
@@ -607,7 +607,7 @@ Overfull \hbox (16.27577pt too wide) in paragraph at lines 59--65
 [][]   []
  []
 
-[2] [3 <./EPR_splitting.png>]
+[2 <./EPR_splitting.png>] [3]
 Package epstopdf Info: Source file: <ESR_calibration.eps>
 (epstopdf)                    date: 2017-12-11 20:27:47
 (epstopdf)                    size: 28194 bytes
@@ -616,7 +616,7 @@ Package epstopdf Info: Source file: <ESR_calibration.eps>
 (epstopdf)                    size: 5327 bytes
 (epstopdf)             Command: <epstopdf --outfile=ESR_calibration-eps-convert
 ed-to.pdf ESR_calibration.eps>
-(epstopdf)             \includegraphics on input line 107.
+(epstopdf)             \includegraphics on input line 109.
 Package epstopdf Info: Output file is already uptodate.
 
 <ESR_calibration-eps-converted-to.pdf, id=32, 421.575pt x 316.18124pt>
@@ -624,10 +624,10 @@ File: ESR_calibration-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ESR_calibration-eps-converted-to.pdf>
 Package pdftex.def Info: ESR_calibration-eps-converted-to.pdf used on input lin
-e 107.
+e 109.
 (pdftex.def)             Requested size: 248.72708pt x 186.5453pt.
 
-Overfull \hbox (39.14453pt too wide) in paragraph at lines 107--108
+Overfull \hbox (39.14453pt too wide) in paragraph at lines 109--110
 [][] 
  []
 
@@ -639,21 +639,21 @@ Package epstopdf Info: Source file: <DPPH.eps>
 (epstopdf)                    size: 7769 bytes
 (epstopdf)             Command: <epstopdf --outfile=DPPH-eps-converted-to.pdf D
 PPH.eps>
-(epstopdf)             \includegraphics on input line 113.
+(epstopdf)             \includegraphics on input line 115.
 Package epstopdf Info: Output file is already uptodate.
 <DPPH-eps-converted-to.pdf, id=33, 421.575pt x 316.18124pt>
 File: DPPH-eps-converted-to.pdf Graphic file (type pdf)
 
 <use DPPH-eps-converted-to.pdf>
-Package pdftex.def Info: DPPH-eps-converted-to.pdf used on input line 113.
+Package pdftex.def Info: DPPH-eps-converted-to.pdf used on input line 115.
 (pdftex.def)             Requested size: 252.94695pt x 189.7102pt.
 
-Overfull \hbox (36.13695pt too wide) in paragraph at lines 113--114
+Overfull \hbox (36.13695pt too wide) in paragraph at lines 115--116
 [][] 
  []
 
 
-Underfull \hbox (badness 1728) in paragraph at lines 114--114
+Underfull \hbox (badness 1728) in paragraph at lines 116--116
 \OT1/cmr/m/n/10.95 of applied magnetic field for the DPPH
  []
 
@@ -667,22 +667,22 @@ Package epstopdf Info: Source file: <NMR_calibration.eps>
 (epstopdf)                    size: 10267 bytes
 (epstopdf)             Command: <epstopdf --outfile=NMR_calibration-eps-convert
 ed-to.pdf NMR_calibration.eps>
-(epstopdf)             \includegraphics on input line 219.
+(epstopdf)             \includegraphics on input line 221.
 Package epstopdf Info: Output file is already uptodate.
  <NMR_calibration-eps-converted-to.pdf, id=50, 421.575pt x 316.18124pt>
 File: NMR_calibration-eps-converted-to.pdf Graphic file (type pdf)
 
 <use NMR_calibration-eps-converted-to.pdf>
 Package pdftex.def Info: NMR_calibration-eps-converted-to.pdf used on input lin
-e 219.
+e 221.
 (pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
 
-Overfull \hbox (22.28441pt too wide) in paragraph at lines 219--220
+Overfull \hbox (22.28441pt too wide) in paragraph at lines 221--222
 [][] 
  []
 
 
-Underfull \hbox (badness 2326) in paragraph at lines 220--220
+Underfull \hbox (badness 2326) in paragraph at lines 222--222
 []\OT1/cmr/bx/n/10.95 Figure 4. \OT1/cmr/m/n/10.95 Magnetic field inside the
  []
 
@@ -694,22 +694,22 @@ Package epstopdf Info: Source file: <NMR_resonances.eps>
 (epstopdf)                    size: 14102 bytes
 (epstopdf)             Command: <epstopdf --outfile=NMR_resonances-eps-converte
 d-to.pdf NMR_resonances.eps>
-(epstopdf)             \includegraphics on input line 225.
+(epstopdf)             \includegraphics on input line 227.
 Package epstopdf Info: Output file is already uptodate.
 <NMR_resonances-eps-converted-to.pdf, id=51, 421.575pt x 316.18124pt>
 File: NMR_resonances-eps-converted-to.pdf Graphic file (type pdf)
 
 <use NMR_resonances-eps-converted-to.pdf>
 Package pdftex.def Info: NMR_resonances-eps-converted-to.pdf used on input line
- 225.
+ 227.
 (pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
 
-Overfull \hbox (7.82953pt too wide) in paragraph at lines 225--226
+Overfull \hbox (7.82953pt too wide) in paragraph at lines 227--228
 [][] 
  []
 
 
-Overfull \hbox (1.24257pt too wide) in paragraph at lines 218--229
+Overfull \hbox (1.24257pt too wide) in paragraph at lines 220--231
 [][]   [] 
  []
 
@@ -723,7 +723,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  13223 strings out of 493335
  270740 string characters out of 3139230
- 295131 words of memory out of 3000000
+ 294131 words of memory out of 3000000
  16651 multiletter control sequences out of 15000+200000
  545019 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -747,7 +747,7 @@ sfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 2197055_ESR_NMR_P3report.pdf (8 pages, 290764 bytes).
+Output written on 2197055_ESR_NMR_P3report.pdf (8 pages, 290614 bytes).
 PDF statistics:
  132 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
