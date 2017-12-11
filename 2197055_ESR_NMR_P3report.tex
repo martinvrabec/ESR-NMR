@@ -6,14 +6,11 @@
 
 \begin{document}
 \title{Electron spin resonance and nuclear magnetic resonance}
-
 \author{2197055}
-
 
 \begin{abstract}
 Electron spin resonance (ESR) and nuclear magnetic resonance (NMR) are two important spectroscopic techniques for probing properties of materials containing constituents with non-zero permanent magnetic moments capable of resonant absorption of electromagnetic energy --- electronic systems in the case of ESR and atomic nuclei in the case of NMR. In this experiment, we studied ESR on a sample of Diphenyl-Picryl-Hydrazil (DPPH), a paramagnetic organic molecule with an unpaired $e^-$, by means of measuring the resonant frequency as a function of externally applied magnetic field in order to determine the sample\textquoteright s $g$-factor, which was found to be $g\textsubscript{DPPH} = 2.02 \pm 0.01$.
 Further, we investigated the magnetic properties of ${}^1$H and ${}^{19}$F nuclei in the following substances: glycerine, polystyrene (both of which contain hydrogen), PTFE (which contains fluorine), and polythene, whose composition we wanted to infer. The experimentally measured $g$-factors were $g\textsubscript{glycerine} = 5.54 \pm 0.03$, $g\textsubscript{polystyrene} = 5.68 \pm 0.01$ and $g\textsubscript{PTFE} = 5.34 \pm 0.01$. Comparison with the results obtained for polythene lead us to postulate the presence of hydrogen in our polythene sample, as confirmed by its chemical formula.
-
 \end{abstract}
 
 \section{Introduction}
@@ -47,16 +44,25 @@ The associated magnetic moment is
 where $g$ is the Land\'e splitting factor, or $g$-factor, which for a free electron has the value $g_e = 2.002319$, and $\mu_B = 9.274 \times 10^{-24} \si{\joule\per\tesla}$ is the Bohr magneton. Note that the magnetic moment points in the opposite direction as the spin~vector~$\mathbf{S}$ due to the electron's negative charge.
 
 A magnetic moment in a field $\mathbf{B} = B \, \mathbf{e_z}$ (where $\mathbf{e_z}$ is the unit vector in the $z$-direction) has potential energy
-\begin{align}
-	E &= - \bm{\mu}_S \cdot \mathbf{B} = - (- g \frac{\mu_B}{\hbar} \mathbf{S})\cdot\mathbf{B}, \quad \text{substituting in from \eqref{eqn: magnetic moment}}, \nonumber \\
-	  &= g \frac{\mu_B}{\hbar}S_z B, \quad \text{using \eqref{eqn: magnetic moment z-projection}}, \nonumber \\
-	  &= g\mu_Bm_sB \label{eqn: potential energy}.
-\end{align}
+\begin{equation}
+	E = - \bm{\mu}_S \cdot \mathbf{B} \underset{\text{\eqref{eqn: magnetic moment}}}{=}  - (- g \frac{\mu_B}{\hbar} \mathbf{S})\cdot\mathbf{B}
+	  \underset{\text{\eqref{eqn: magnetic moment z-projection}}}{=} g \frac{\mu_B}{\hbar}S_z B 
+	  = g\mu_Bm_sB \label{eqn: potential energy}.
+\end{equation}
 
 Equation \eqref{eqn: potential energy} shows that the two orientations ($m_s = \pm\tfrac12$) no longer have the same energy --- the one whose magnetic moment is aligned with the field (or equivalently whose spin points in the direction opposite to the field, i.e.\ having $m_s = -\tfrac12$) has a lower potential energy than the one whose magnetic moment is anti-parallel to the field ---, as depicted in figure \ref{fig: energy splitting}. The energy difference between the two levels is 
 \begin{equation}
 	\Delta E = g \mu_B B. \label{eqn: energy difference}
 \end{equation}
+
+\begin{figure}[htbp]
+	\includegraphics[scale=0.75]{EPR_splitting.png}
+	\hspace{2pc}
+	\begin{minipage}[b]{3in}
+		\caption{Energy splitting of the two spin states of an $e^-$ placed in an external magnetic~field~$\mathbf{B_0}$.}
+	\end{minipage}
+	\label{fig: energy splitting}
+\end{figure}
 
 In thermal equilibrium, the spins are distributed according to the Boltzmann distribution
 \[
@@ -69,20 +75,11 @@ If there are more spins in the lower than the upper state, transitions can be in
 	h\nu = g\mu_B B. \label{eqn: resonance condition}
 \end{equation}
 
-\begin{figure}[htbp]
-	\includegraphics[scale=0.75]{EPR_splitting.png}
-	\hspace{2pc}
-	\begin{minipage}[b]{3in}
-		\caption{Energy splitting of the two spin states of an $e^-$ placed in an external magnetic~field~$\mathbf{B_0}$.}
-	\end{minipage}
-	\label{fig: energy splitting}
-\end{figure}
-
-In a real material, an electron ``feels'' not only the externally applied field, but also the fields produced by any surrounding (magnetic) nuclei and/or other electrons. The effect of the surroundings can be interpreted as a shift in the $g$-value that appears in equation \eqref{eqn: magnetic moment} compared to the free-electron value. In addition, the chemical environment also has an effect on the shape of the resonance signal and its line width, amongst other things. This gives an indication of how ESR can be used to infer information on the chemical composition and structure of materials. In this particular experiment, we measured the $g$-value of DPPH.
+In a real material, an electron ``feels'' also the fields produced by any surrounding (magnetic) nuclei and/or other electrons. The effect of the surroundings can be interpreted as a shift in the $g$-value appearing in equation \eqref{eqn: magnetic moment} compared to the free-electron value. In this particular experiment, we measured the $g$-value of DPPH. In addition, the chemical environment also has an effect on the shape of the resonance signal and its line width, amongst other things. This gives an indication of how ESR can be used to infer information about the chemical composition and structure of materials. 
 
 \subsection{Experimental method}\label{section: method}
 % Insert figure
-The DPPH sample was placed in a uniform magnetic field generated by two parallel vertically-positioned Helmholtz coils (HCs) connected to a DC current supply. The sample was inserted into another coil connected to an RF circuit oscillating at an adjustable frequency $\nu$. This coil provided the energy $h\nu$ needed to flip the $e^-$s spins. The magnetic field produced by the HCs was varied, by changing the current, to identify when the resonance condition \eqref{eqn: resonance condition} was met for a particular (fixed) frequency. The measurement was then repeated for a number of different frequencies. The resonance was detected thanks to a measurable voltage change in the RF circuit, observed using an oscilloscope, that occurred due to the change of the RF coil's permeability when the sample was absorbing energy. (The magnetic field induced in the RF coil was perpendicular to the field of the HCs and was neglected for the purposes of the results analysis).
+The DPPH sample was placed in a uniform magnetic field generated by two parallel vertical Helmholtz coils (HCs) connected to a DC current supply. The sample was inserted into another coil connected to an RF circuit oscillating at an adjustable frequency $\nu$, irradiating the sample with energy $h\nu$. The magnetic field produced by the HCs was varied by changing the current, and resonance was detected with an oscilloscope thanks to an observable voltage change in the RF circuit that occurred each time the condition \eqref{eqn: resonance condition} was met for a particular (fixed) frequency, due to the change of the RF coil's permeability when the sample was absorbing energy. The measurement was repeated for a number of different frequencies.  
 
 For an $e^-$ with only two possible spin states, it would be necessary to match the RF frequency and the current in the HCs with considerable accuracy to obtain resonance. Also, once the population of the spin states has been inverted, the sample can no longer absorb more energy before enough electrons have returned to the lower state, so they need to be excited at a rate slower than the relaxation time (the time needed for the electrons to de-excite and return to thermal equilibrium via spin-spin and spin-lattice interactions). The solution to both problems was to superimpose a ($50 \si{\hertz}$) modulation (AC) current on the DC component going into the HCs, resulting in a sinusoidally-varying modulation magnetic field. The total field $\mathbf{B}_{total}$ was then the superposition of the two, and thus oscillated around a central value $B_0$. If the resonance condition \eqref{eqn: resonance condition} was satisfied for some value of $\mathbf{B}_{total}$ during this oscillation, a resonance signal was observed, twice during the cycle at symmetric positions (provided that the phase lag between the modulation signal and the sample response signal was correctly accounted for). By adjusting the DC current, it was possibly to make the resonance occur precisely at the point when the modulation field dropped to zero and the field was equal simply to $B_0$, i.e.\ it was the $B_0$ that satisfying \eqref{eqn: resonance condition} for the given frequency.
 
@@ -102,17 +99,21 @@ We obtained
 \]
 where $I$ is in $\si{\ampere}$, and $B_0$ is in $\si{\milli\tesla}$.
 
-\begin{figure}[htbp]
-	\label{fig: HC calibration curve}
-\end{figure}
-
-
-
 \subsubsection{Measurement of the $g$-factor of DPPH.}
 The frequency in the RF oscillator circuit was varied in steps of $5 \si{\mega\hertz}$, and for each frequency, the current in the Helmholtz coils was scanned over the range $0.1 \si{\ampere}$ to $1.2 \si{\ampere}$ to find the resonance. For a given frequency, the measurement was repeated multiple times to get an idea of the uncertainty in the resonant current. Figure \ref{fig: DPPH resonance} shows the resonance frequency as a function of the field.
 
 \begin{figure}[htbp]
-	\label{fig: DPPH resonance}
+	\begin{minipage}[b]{2.9in}
+		\includegraphics[scale=0.59]{ESR_calibration.eps}
+		\caption{Magnetic field in between the Helmholtz coils as a function of the current passing through them.}
+		\label{fig: HC calibration curve}
+	\end{minipage}
+    \hspace{1.5pc}
+	\begin{minipage}[b]{3in}
+		\includegraphics[scale=0.6]{DPPH.eps}
+		\caption{Resonant frequency as a function of applied magnetic field for the DPPH sample.}
+		\label{fig: DPPH resonance}
+	\end{minipage}
 \end{figure}
 
 \subsection{Analysis}
@@ -186,10 +187,9 @@ The experimental procedure was analogous to the ESR part of the experiment (see 
 
 \subsection{Results}
 \subsubsection{Electromagnet calibration.}
-Just like in section (\ref{section: calibration}), we first calibrated our electromagnet to be able to relate current passing through it to the magnetic field.
-Since the electromagnet contained an iron core, its field depended not only the value of the current, but also on whether the current was being increased or decreased. This effect is called \emph{hysteresis} (a dependence of the net magnetization of a ferromagnet on the history of any externally applied magnetic field). 
+Just like in section \ref{section: calibration}, we first calibrated the electromagnet to be able to relate the current passing through it to the magnetic field it generates. Since the electromagnet contained an iron core, its field depended not only the value of the current, but also on whether the current was being increased or decreased. This effect is called \emph{hysteresis} (a dependence of the net magnetization of a ferromagnet on the history of any externally applied magnetic field). 
 
-Therefore, we did our calibration first for an increasing and then a decreasing current. Figure \ref{fig: hysteresis curve} shows the hysteresis curve obtained.
+Therefore, we did our calibration first for an increasing and then a decreasing current. Figure \ref{fig: hysteresis curve} shows the hysteresis curve that we obtained.
 \begin{note}
 	Only the part of the curve corresponding to increasing current was used in the next section.
 \end{note}
@@ -200,10 +200,33 @@ We fitted a polynomial of degree $2$, $y = ax^2 + bx + c$, to the upper half of 
 	c &\approx -34 \pm 12.
 \end{align*}
 
+%\begin{figure}[htbp]
+%	\includegraphics[scale=0.75]{NMR_calibration.eps}
+%	\hspace{1pc}
+%	\begin{minipage}[b]{2in}
+%		\caption{Magnetic field inside the electromagnet as a function of the current.}
+%	\end{minipage}
+%	\label{fig: hysteresis curve}
+%\end{figure}
+
 \subsubsection{Measurement of the $g$-factors of Glycerine, Polystyrene and PTFE.}
 
-Figure \ref{fig: NMR resonances} shows the graphs of resonance frequencies as a function of $B_0$ for the 3 different substances, and
-figure \ref{fig: resonance spectra} shows the general shape of the resonance signals as viewed on an oscilloscope.
+Figure \ref{fig: NMR resonances} shows the graphs of resonance frequencies as a function of $B_0$ for the 3 different substances.%, and
+%figure \ref{fig: resonance spectra} shows the general shape of the resonance signals as viewed on an oscilloscope.
+
+\begin{figure}[htbp]
+	\begin{minipage}[b]{2.9in}
+		\includegraphics[scale=0.55]{NMR_calibration.eps}
+		\caption{Magnetic field inside the electromagnet as a function of the current.}
+		\label{fig: hysteresis curve}
+	\end{minipage}
+	\hspace{1.5pc}
+	\begin{minipage}[b]{3.1in}
+		\includegraphics[scale=0.55]{NMR_resonances.eps}
+		\caption{Resonant frequency as a function of applied magnetic field for glycerine, polystyrene and PTFE}
+		\label{fig: NMR resonances}
+	\end{minipage}
+\end{figure}
 
 \subsection{Analysis}
 According to \eqref{eqn: NMR resonance condition}, $\left| \frac{\nu}{B_0} \right|$ should be a constant, equal to $\frac{g \mu_n}{h}$. It follows that $g = \frac{h}{\mu_n} \left( \frac{\nu}{B_0} \right)$. We performed a straight-line fit to our plots in figure \ref{fig: NMR resonances}, and got
