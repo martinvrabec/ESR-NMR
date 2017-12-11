@@ -91,13 +91,13 @@ The following two sections present the results that we obtained.
 \subsubsection{Helmholtz coils calibration.} \label{section: calibration}
 The direct current going through the Hemlhotz coils was varied and the magnetic field $B_0$ at the centre of the coils was recorded. We observed quite large fluctuations of the field for a given current, and therefore 5 different readings were taken and averaged. For the purposes of error analysis, the uncertainty in the mean was then taken to be half the spread of the observed values (as there weren't enough readings to justify using the formula for the standard error in the mean). For the current, the measurement uncertainty was taken to be half the smallest scale division. 
 
-We subsequently performed a weighted straight-line fit to the data. Figure \ref{fig: HC calibration curve} shows the resulting calibration curve with uncertainties indicated by error bars. This curve was used in the second part to convert between measured current and magnetic field applied to the sample. We used the MATLAB's built-in function \texttt{polyval} to estimate the uncertainties in the values of $B_0$ predicted by the curve for a given $I$, based on the goodness of fit.
+We subsequently performed a weighted straight-line fit to the data. Figure \ref{fig: HC calibration curve} shows the resulting calibration curve with uncertainties indicated by error bars. This curve was used in the second part to convert between measured current and magnetic field applied to the sample. We used the MATLAB's built-in function \texttt{polyval} to estimate the uncertainties in the values of $B_0$ predicted by the curve, based on the goodness of fit.
 
 We obtained 
 \[
 	B_0 = (3.73 \pm 0.01) I + (0.03 \pm 0.01),
 \]
-where $I$ is in $\si{\ampere}$ and $B_0$ is in $\si{\milli\tesla}$.
+where $I$ is in $\si{\ampere}$, and $B_0$ is in $\si{\milli\tesla}$.
 
 \begin{figure}[htbp]
 	\label{fig: HC calibration curve}
@@ -131,7 +131,7 @@ Substituting into \eqref{eqn: gradient} yields
 \[
 	g_{\textsubscript{DPPH}} = 2.02 \pm 0.01,
 \] 
-(where the uncertainty in the final value has been computed, given that $h$ and $\mu_B$ are exact values, simply by multiplying the error in the gradient by $h / \mu_B$ ).
+(where the uncertainty in the final value has been computed, given that $h$ and $\mu_B$ are constants, simply by multiplying the error in the gradient by $h / \mu_B$ ).
 
 \subsection{Discussion}
 For a pair of Helmholtz coils separated by a distance equal to their radius, electromagnetic theory predicts that the value of the field at the centre should obey approximately
@@ -141,9 +141,9 @@ For a pair of Helmholtz coils separated by a distance equal to their radius, ele
 where $\mu = 4\pi\times10^{-7} \; \si{\volt\s\ampere\tothe{-1}\meter\tothe{-1}}$, $n$ is the number of turns per coil, and $r$ is their radius.
 
 This shows that the expected relationship between $I$ and $B_0$ was linear, as confirmed by our data (see figure \ref{fig: HC calibration curve}).
-However, for our particular coils, the expected value of the gradient was $4.23$, which does not agree with the value that we obtained experimentally, i.e.\ $3.73 \pm 0.01$. This could be due to the fact that the separation of the coils might not have been exactly equal to their radius. Due to such possible differences in our set-up from the idealised case, we used the experimentally obtained calibration curve in the subsequent sections, not the theoretical one. Any error in the calibration curve therefore represents a systematic error in the results obtained for DPPH. 
+However, for our particular coils, the expected value of the gradient was $4.23$, which does not agree with the value that we obtained experimentally, i.e.\ $3.73 \pm 0.01$. This could be due to the fact that the separation of the coils might not have been exactly equal to their radius. Due to such possible differences in our set-up from the idealised case, we used the experimentally obtained calibration curve in the subsequent sections, not the theoretical one. Any error in the calibration curve therefore represents a systematic error in the results obtained thereafter.
 
-Possible sources of error were the difficulty in making sure that the Hall probe was oriented exactly perpendicular to the measured field (i.e.\ parallel to the coils), and that it was located at the exact position where the sample was later inserted. We also couldn't be sure whether the Hall probe itself was calibrated correctly (as we didn't obtain the expected result when we checked with a standard magnet), and whether we zeroed it at a point with no magnetic field. This could have introduced a systematic offset. A source statistical errors were the random fluctuations in the magnetic field and in the response of the probe over time (e.g.\ due to warming up of the equipment).
+Possible sources of error were the difficulty in making sure that the Hall probe was oriented perpendicularly to the measured field (i.e.\ parallel to the coils), and that it was located at the exact position where the sample was later placed. We also couldn't be sure whether the Hall probe itself was calibrated correctly (as we didn't obtain the expected result when we checked with a standard magnet), and whether we zeroed it at a point with no magnetic field. This could have introduced a systematic offset. A source statistical errors were the random fluctuations in the magnetic field and in the response of the probe over time (e.g.\ due to warming up of the equipment).
 
 Our measurement of the DPPH resonance confirmed the linear relationship predicted by \eqref{eqn: resonance condition} for the magnetic field and the resonance frequency. This shows that, indeed, an energy splitting occurs when the sample is placed in an external field, that this creates two separate energy levels such that the energy difference between them scales linearly with the applied field, and that energy transitions can be induced by supplying EM energy of the correct frequency. 
 
@@ -154,11 +154,11 @@ The accepted value for the $g$-factor of DPPH is
 Our value lies within $2\sigma$ of this value, and is therefore in reasonable agreement.
 Compare this with the theoretical value for the $g$-factor due to the spin of a free $e^-$
 \[
-	g_e = 2.002319.
+	g_{e,\text{ th}} = 2.002319.
 \]
-This is slightly different from both the accepted and our experimental value for $g_{\textsubscript{DPPH}}$, which as explained in the (\ref{section: theory}) theory section can be due to the effect of the chemical surrounding of the unpaired $e^-$ in DPPH. Nevertheless, the values are relatively close, showing in particular that the assumption that we can neglect the orbital angular momentum of the $e^-$ and attribute the molecule's magnetic moment solely to the spin angular momentum was largely justified.
+This is slightly different from both the accepted and our experimental value for $g_{\textsubscript{DPPH}}$, which, as explained in the (\ref{section: theory}) theory section, could stem from the effect of the chemical surrounding of the unpaired $e^-$. Nevertheless, the values are relatively close, showing in particular that the assumption that we can neglect the orbital angular momentum of the $e^-$ and attribute the molecule's magnetic moment solely to the spin angular momentum was largely justified.
 
-An increase in the precision of our measurements could have been achieved by taking further repeated measurements for a given set of conditions in order to deal with statistical errors due to random fluctuations, but also by using stronger $\mathbf{B}$ field, thus increasing the energy difference between the two spin states and hence reducing the relative uncertainty in this difference, and/or by operating at lower temperatures, both of which could possibly result in a sharper resonance signal (i.e.\ a reduced line width).
+An increase in the precision of our measurements could have been achieved by taking further repeated measurements for a given set of conditions in order to deal with statistical errors due to random fluctuations, but also by using a stronger $\mathbf{B}$ field, thus increasing the energy difference between the two spin states and hence reducing the relative uncertainty in this difference, and/or by operating at lower temperatures, both of which would possibly result in a sharper resonance signal (i.e.\ a reduced line width).
 
 
 \section{NMR} 
