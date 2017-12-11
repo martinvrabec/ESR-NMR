@@ -7,36 +7,38 @@
 \begin{document}
 \title{Electron spin resonance and nuclear magnetic resonance}
 
-\author{2197055V}
+\author{2197055}
 
 
 \begin{abstract}
-Electron spin resonance (ESR) and nuclear magnetic resonance (NMR) are two important spectroscopic techniques for studying properties of materials containing particles or atoms with non-zero magnetic moments. In this experiment, we studied ESR on a sample of Diphenyl-Picryl-Hydrazil (DPPH), a paramagnetic organic molecule with an unpaired $e^-$, by measuring the resonant frequency as a function of externally applied magnetic field in order to determine the sample\textquoteright s $g$-factor, which was found to be $g\textsubscript{DPPH} = 2.02 \pm 0.01$.
-Further, we investigated the magnetic properties of ${}^1$H and ${}^{19}$F nuclei in the following substances: glycerine and polystyrene (both of which contain hydrogen), PTFE (which contains fluorine), and polythene, whose composition we wanted to learn about. The experimentally measured $g$-factors were $g\textsubscript{glycerine} = 5.54 \pm 0.03$, $g\textsubscript{polystyrene} = 5.68 \pm 0.01$ and $g\textsubscript{PTFE} = 5.34 \pm 0.01$. Comparison with the results obtained for polythene lead us to postulate the presence of hydrogen in our polythene sample, as confirmed by its chemical formula.
+Electron spin resonance (ESR) and nuclear magnetic resonance (NMR) are two important spectroscopic techniques for probing properties of materials containing constituents with non-zero permanent magnetic moments capable of resonant absorption of electromagnetic energy --- electronic systems in the case of ESR and atomic nuclei in the case of NMR. In this experiment, we studied ESR on a sample of Diphenyl-Picryl-Hydrazil (DPPH), a paramagnetic organic molecule with an unpaired $e^-$, by means of measuring the resonant frequency as a function of externally applied magnetic field in order to determine the sample\textquoteright s $g$-factor, which was found to be $g\textsubscript{DPPH} = 2.02 \pm 0.01$.
+Further, we investigated the magnetic properties of ${}^1$H and ${}^{19}$F nuclei in the following substances: glycerine, polystyrene (both of which contain hydrogen), PTFE (which contains fluorine), and polythene, whose composition we wanted to infer. The experimentally measured $g$-factors were $g\textsubscript{glycerine} = 5.54 \pm 0.03$, $g\textsubscript{polystyrene} = 5.68 \pm 0.01$ and $g\textsubscript{PTFE} = 5.34 \pm 0.01$. Comparison with the results obtained for polythene lead us to postulate the presence of hydrogen in our polythene sample, as confirmed by its chemical formula.
 
 \end{abstract}
 
 \section{Introduction}
-Electron spin resonance (ESR), also referred to as electron paramagnetic resonance spectroscopy      % find reference
-(EPRS), is an important method for studying paramagnetic chemical substances in which the electrons' magnetic moments don't cancel, such as organic and inorganic free radicals or transition-metal ion complexes. It can provide detailed information relating to the chemical composition and structure of materials, and therefore finds innumerable applications in biology, chemistry, materials science, medicine and pharmacology, to name just a few.
+Electron spin resonance (ESR), also referred to as electron paramagnetic resonance (EPR) spectroscopy,      % find reference
+is an important method for studying paramagnetic chemical substances, in which the electrons' magnetic moments don't cancel, such as organic and inorganic free radicals or transition-metal ion complexes. It can provide detailed information relating to the chemical composition and structure of materials, and therefore finds innumerable applications in biology, chemistry, materials science, medicine and pharmacology, to name just a few.
 
-Similarly, nuclear magnetic resonance (NMR) exploits the fact that some nuclei possess a non-zero overall nuclear spin, and hence a magnetic moment, to study the properties of materials containing such nuclei. NMR has widespread use and applications, notably in medical imaging --- it underlies MRI (magnetic resonance imaging).
+Similarly, nuclear magnetic resonance (NMR) exploits the fact that some nuclei possess a non-zero overall spin, and hence a permanent magnetic moment, to probe the properties of materials containing such nuclei. It has widespread use and far-reaching applications, notably in medical imaging, where it forms the basis behind MRI (magnetic resonance imaging).
+
+The aim of this experiment was to explore the fundamental principles underlying these two phenomena.
 
 \section{ESR}
-In the first part of the experiment we studied ESR on a sample of Diphenyl-Picryl-Hydrazil (DPPH), which is a paramagnetic organic molecule with a single unpaired $e^-$. The orbital angular momentum of the electron is essentially zero,    % find reference
-and hence the molecule\textquoteright s total magnetic moment is solely due to the electron\textquoteright s spin angular momentum. This makes it particularly suitable for ESR experiments.
+In the first part of the experiment, we performed an ESR study on a sample of Diphenyl-Picryl-Hydrazil (DPPH), which is a paramagnetic organic molecule with a single unpaired $e^-$. The orbital angular momentum of this electron is essentially zero,    % find reference
+and hence the molecule\textquoteright s total magnetic moment is solely due to the electron\textquoteright s intrinsic spin angular momentum, which makes it particularly suited for ESR investigations.
  
 \subsection{Theory}\label{section: theory}
-In the absence of any external magnetic fields (i.e.\ for a free $e^-$), the two possible spin states (``spin up'' and ``spin down'') are degenerate, i.e.\ they have the same energy.
+In the absence of any external magnetic fields (i.e.\ for a free $e^-$), the two possible spin states (``spin up'' and ``spin down'') are degenerate --- they have the same energy.
 
-However, energy splitting of the two states occurs when the $e^-$ is placed in an external magnetic field. Indeed, the $e^-$'s spin gives rise to a magnetic moment $\bm{\mu}_S$ which interacts with the applied field and possesses a different energy depending on its spatial orientation. A bound $e^-$ in a material, in general, has additionally an orbital angular momentum $\mathbf{L}$ which also contributes to the total magnetic moment. However, in many compounds, including DPPH, the orbital angular momentum is not significant and only the spin needs to be considered for the purposes of ESR. 
+However, energy \emph{splitting} of the two states occurs when the electron is placed in a magnetic field. Indeed, the electron's spin gives rise to a magnetic moment $\bm{\mu}_S$ which interacts with the applied field and possesses a different energy depending on its relative spatial orientation. 
 
-According to quantum mechanics, only two orientations of the spin are possible. The magnitude $S$ of the spin vector $\mathbf{S}$ and its two allowed $z$-components $S_z$, where the $z$-axis is defined to lie along the field direction, are respectively given by
+According to quantum mechanics, only two configurations are possible. The magnitude $S$ of the spin vector, $\mathbf{S}$, and its two allowed $z$-components $S_z$ (where the $z$-axis is defined to lie along the direction in which the field is pointing), are respectively given by
 \begin{align}
 	S &= \lvert\lvert\mathbf{S}\rvert\rvert = \sqrt{s(s+1)}\hbar = \tfrac{\sqrt{3}}{2}\hbar,  \quad \text{and} \nonumber \\
 	S_z &= m_s \hbar. \label{eqn: magnetic moment z-projection}
 \end{align}
-where $s=\tfrac12$ is the spin quantum number, $m_s=\pm\tfrac12$ is the secondary spin quantum number, and $\hbar$ is the reduced Planck\textquoteright s constant.
+where $s=\tfrac12$ is the spin quantum number, $m_s=\pm\tfrac12$ is the secondary spin quantum number, and $\hbar = \tfrac{h}{2 \pi}$ is the reduced Planck\textquoteright s constant.
 
 The associated magnetic moment is
 \begin{align}
@@ -44,16 +46,14 @@ The associated magnetic moment is
 \end{align}
 where $g$ is the Land\'e splitting factor, or $g$-factor, which for a free electron has the value $g_e = 2.002319$, and $\mu_B = 9.274 \times 10^{-24} \si{\joule\per\tesla}$ is the Bohr magneton. Note that the magnetic moment points in the opposite direction as the spin~vector~$\mathbf{S}$ due to the electron's negative charge.
 
-A magnetic moment in a magnetic field $\mathbf{B}$ has potential energy
+A magnetic moment in a field $\mathbf{B} = B \, \mathbf{e_z}$ (where $\mathbf{e_z}$ is the unit vector in the $z$-direction) has potential energy
 \begin{align}
-	E &= - \bm{\mu}_S \cdot \mathbf{B} \nonumber \\
-	  &= - (- g \frac{\mu_B}{\hbar} \mathbf{S})\cdot\mathbf{B} \quad \text{substituting in from \eqref{eqn: magnetic moment}}, \nonumber \\
-	  &= g \frac{\mu_B}{\hbar}S_z \lvert\lvert \mathbf{B} \rvert\rvert \quad \text{using \eqref{eqn: magnetic moment z-projection}}, \nonumber \\
-	  &= g\mu_Bm_sB \label{eqn: potential energy},
+	E &= - \bm{\mu}_S \cdot \mathbf{B} = - (- g \frac{\mu_B}{\hbar} \mathbf{S})\cdot\mathbf{B}, \quad \text{substituting in from \eqref{eqn: magnetic moment}}, \nonumber \\
+	  &= g \frac{\mu_B}{\hbar}S_z B, \quad \text{using \eqref{eqn: magnetic moment z-projection}}, \nonumber \\
+	  &= g\mu_Bm_sB \label{eqn: potential energy}.
 \end{align}
-where $B$ denotes the magnitude $\lvert\lvert \mathbf{B} \rvert\rvert$ of the magnetic field (so that $\mathbf{B} = B \, \mathbf{e_z}$, where $\mathbf{e_z}$ is the unit vector in the $z$-direction).
 
-Equation \eqref{eqn: potential energy} shows that the two orientations no longer have the same energy --- the one whose magnetic moment is aligned with the field (or equivalently whose spin points in the direction opposite to the field, i.e.\ having $m_s = -\tfrac12$) has a lower potential energy than the one whose magnetic moment is anti-parallel to the field ---, as depicted in figure \ref{fig: energy splitting}. The energy difference between the two levels is 
+Equation \eqref{eqn: potential energy} shows that the two orientations ($m_s = \pm\tfrac12$) no longer have the same energy --- the one whose magnetic moment is aligned with the field (or equivalently whose spin points in the direction opposite to the field, i.e.\ having $m_s = -\tfrac12$) has a lower potential energy than the one whose magnetic moment is anti-parallel to the field ---, as depicted in figure \ref{fig: energy splitting}. The energy difference between the two levels is 
 \begin{equation}
 	\Delta E = g \mu_B B. \label{eqn: energy difference}
 \end{equation}
@@ -62,20 +62,23 @@ In thermal equilibrium, the spins are distributed according to the Boltzmann dis
 \[
     \frac{N_{+\tfrac12}}{N_{-\tfrac12}} = \exp(- \frac{\Delta E}{k_B T}),
 \]
-where $k_B$ is the Boltzmann\textquoteleft s constant, and $N_{\pm\tfrac12}$ are the number of spins in the higher and lower states respectively. 
+where $k_B$ is Boltzmann\textquoteright s constant, and $N_{\pm\tfrac12}$ are the number of spins in the higher and lower states, respectively. 
 
-If the conditions are such that there are more spins in the lower state than the upper state, transitions can be induced by supplying energy to the sample, e.g.\ by irradiating it with electromagnetic (EM) radiation with the right frequency $\nu$. The energy of an EM wave is given by $E = h \nu$, where $h$ is Planck's constant, so the condition for resonance is
+If there are more spins in the lower than the upper state, transitions can be induced by supplying energy, e.g.\ by irradiating the sample with electromagnetic (EM) radiation with the right frequency $\nu$. The energy of an EM wave is $E = h \nu$, where $h$ is Planck's constant, so the condition for resonance, given \eqref{eqn: energy difference}, can be stated as
 \begin{equation}
 	h\nu = g\mu_B B. \label{eqn: resonance condition}
 \end{equation}
 
 \begin{figure}[htbp]
-	\includegraphics{EPR_splitting.png}
-	\caption{Energy splitting of the two spin states of an $e^-$ placed in an external magnetic~field~$\mathbf{B_0}$.}
+	\includegraphics[scale=0.75]{EPR_splitting.png}
+	\hspace{2pc}
+	\begin{minipage}[b]{3in}
+		\caption{Energy splitting of the two spin states of an $e^-$ placed in an external magnetic~field~$\mathbf{B_0}$.}
+	\end{minipage}
 	\label{fig: energy splitting}
 \end{figure}
 
-In a real material, an electron ``feels'' not only the externally applied field, but also the magnetic fields produced by any surrounding magnetic nuclei and/or other electrons, leading to further energy splitting. The effect of the surroundings can be interpreted as a shift in the $g$-value in equation \eqref{eqn: magnetic moment} compared to the free-electron value. The chemical environment of the $e^-$ also has an effect on the shape of the resonance signal and its line width, amongst other things. Thus, ESR can provide a lot of information on the chemical composition and structure of materials. In this experiment, we measured the $g$-value of DPPH.
+In a real material, an electron ``feels'' not only the externally applied field, but also the fields produced by any surrounding (magnetic) nuclei and/or other electrons. The effect of the surroundings can be interpreted as a shift in the $g$-value that appears in equation \eqref{eqn: magnetic moment} compared to the free-electron value. In addition, the chemical environment also has an effect on the shape of the resonance signal and its line width, amongst other things. This gives an indication of how ESR can be used to infer information on the chemical composition and structure of materials. In this particular experiment, we measured the $g$-value of DPPH.
 
 \subsection{Experimental method}\label{section: method}
 % Insert figure
@@ -86,7 +89,7 @@ For an $e^-$ with only two possible spin states, it would be necessary to match 
 The value of $B_0$ could be deduced from the DC current $I_0$ in the coils --- we created a calibration curve of $B_0$ as a function of $I_0$ using a Hall probe sensor to measure the magnetic field in the centre of the coil set-up.
 
 \subsection{Results}
-The following two sections present the results that we obtained.
+The results of the two stages of the experiment are summarized in the following subsections.
 
 \subsubsection{Helmholtz coils calibration.} \label{section: calibration}
 The direct current going through the Hemlhotz coils was varied and the magnetic field $B_0$ at the centre of the coils was recorded. We observed quite large fluctuations of the field for a given current, and therefore 5 different readings were taken and averaged. For the purposes of error analysis, the uncertainty in the mean was then taken to be half the spread of the observed values (as there weren't enough readings to justify using the formula for the standard error in the mean). For the current, the measurement uncertainty was taken to be half the smallest scale division. 
