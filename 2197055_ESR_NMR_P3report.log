@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.10)  12 DEC 2017 12:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.10)  12 DEC 2017 13:28
 entering extended mode
 **./2197055_ESR_NMR_P3report.tex
 (2197055_ESR_NMR_P3report.tex
@@ -1007,7 +1007,7 @@ Package epstopdf Info: Source file: <NMR_calibration_nocaption_nolegend_red.eps
 (epstopdf)                    size: 10363 bytes
 (epstopdf)             Command: <epstopdf --outfile=NMR_calibration_nocaption_n
 olegend_red-eps-converted-to.pdf NMR_calibration_nocaption_nolegend_red.eps>
-(epstopdf)             \includegraphics on input line 233.
+(epstopdf)             \includegraphics on input line 220.
 Package epstopdf Info: Output file is already uptodate.
 
 <NMR_calibration_nocaption_nolegend_red-eps-converted-to.pdf, id=50, 421.575pt 
@@ -1017,16 +1017,11 @@ File: NMR_calibration_nocaption_nolegend_red-eps-converted-to.pdf Graphic file
 
 <use NMR_calibration_nocaption_nolegend_red-eps-converted-to.pdf>
 Package pdftex.def Info: NMR_calibration_nocaption_nolegend_red-eps-converted-t
-o.pdf used on input line 233.
+o.pdf used on input line 220.
 (pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
 
-Overfull \hbox (22.28441pt too wide) in paragraph at lines 233--234
+Overfull \hbox (22.28441pt too wide) in paragraph at lines 220--221
 [][] 
- []
-
-
-Underfull \hbox (badness 2326) in paragraph at lines 234--234
-[]\OT1/cmr/bx/n/10.95 Figure 4. \OT1/cmr/m/n/10.95 Magnetic field inside the
  []
 
 Package epstopdf Info: Source file: <NMR_resonances.eps>
@@ -1037,22 +1032,22 @@ Package epstopdf Info: Source file: <NMR_resonances.eps>
 (epstopdf)                    size: 14102 bytes
 (epstopdf)             Command: <epstopdf --outfile=NMR_resonances-eps-converte
 d-to.pdf NMR_resonances.eps>
-(epstopdf)             \includegraphics on input line 239.
+(epstopdf)             \includegraphics on input line 226.
 Package epstopdf Info: Output file is already uptodate.
 <NMR_resonances-eps-converted-to.pdf, id=51, 421.575pt x 316.18124pt>
 File: NMR_resonances-eps-converted-to.pdf Graphic file (type pdf)
 
 <use NMR_resonances-eps-converted-to.pdf>
 Package pdftex.def Info: NMR_resonances-eps-converted-to.pdf used on input line
- 239.
+ 226.
 (pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
 
-Overfull \hbox (7.82953pt too wide) in paragraph at lines 239--240
+Overfull \hbox (7.82953pt too wide) in paragraph at lines 226--227
 [][] 
  []
 
 
-Overfull \hbox (1.24257pt too wide) in paragraph at lines 232--243
+Overfull \hbox (1.24257pt too wide) in paragraph at lines 219--230
 [][]   [] 
  []
 
@@ -1066,7 +1061,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  24068 strings out of 493335
  504522 string characters out of 3139230
- 512022 words of memory out of 3000000
+ 511022 words of memory out of 3000000
  27277 multiletter control sequences out of 15000+200000
  545019 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1090,7 +1085,7 @@ sfonts/cm/cmsy6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 2197055_ESR_NMR_P3report.pdf (8 pages, 294067 bytes).
+Output written on 2197055_ESR_NMR_P3report.pdf (8 pages, 294979 bytes).
 PDF statistics:
  134 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
