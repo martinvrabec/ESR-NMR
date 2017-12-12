@@ -1,6 +1,6 @@
 \documentclass[a4paper]{jpconf}
 \usepackage{graphicx}
-\usepackage{amsmath,amsfonts,amssymb,amsthm,siunitx,bm}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,siunitx,bm,chemfig}
 \numberwithin{equation}{section}
 \newtheorem*{note}{Note}
 
@@ -208,8 +208,25 @@ We fitted a polynomial of degree $2$, $y = ax^2 + bx + c$, to the upper half of 
 
 \subsubsection{Measurement of the $g$-factors of Glycerine, Polystyrene and PTFE.}
 
-Figure \ref{fig: NMR resonances} shows the graphs of resonance frequencies as a function of $B_0$ for the 3 different substances.%, and
-%figure \ref{fig: resonance spectra} shows the general shape of the resonance signals as viewed on an oscilloscope.
+Figure \ref{fig: NMR resonances} shows the graphs of resonance frequencies as a function of $B_0$ for the 3 different substances: glycerine, polystyrene and PTFE.
+
+Due to time constraints, we didn't manage to collect enough data points for polythene to be able to perform a fit and determine its $g$-factor from it. However, we did find the resonant frequency for a few values of the current and compared the results for the 4 substances, in order to ascertain whether polythene was more likely to contain hydrogen or fluorine. Table \ref{table: polythene} shows an example measurement for one particular frequency.
+
+\begin{table}
+	\caption{\label{table: polythene} Resonant frequency for $I = 3.318 \, \si{\ampere}$.}
+	\begin{center}
+		\begin{tabular}{ll}
+			\br
+			Sample&Frequency ($\si{\mega\hertz}$)\\
+			\mr
+			Glycerine&18.2326\\
+			Polystyrene&18.2323\\
+			Polythene&18.2325\\
+			PTFE&17.1533\\
+			\br
+		\end{tabular}
+	\end{center}
+\end{table}
 
 \begin{figure}[htbp]
 	\begin{minipage}[b]{2.9in}
@@ -238,7 +255,29 @@ According to \eqref{eqn: NMR resonance condition}, $\left| \frac{\nu}{B_0} \righ
 
 \subsection{Discussion}
 
+Looking at results in table \ref{table: polythene}, and judging also from the general shape of the resonance signals observed on the oscilloscope, we concluded that polythene is likely to contain hydrogen, because its characteristics were similar to glycerine and polystyrene, and differed significantly from PTFE. This agrees with its chemical formula:
+
+\vspace{10pt}
+\newcommand\setpolymerdelim[2]{\def\delimleft{#1}\def\delimright{#2}}
+\def\makebraces[#1,#2]#3#4#5{%
+	\edef\delimhalfdim{\the\dimexpr(#1+#2)/2}%
+	\edef\delimvshift{\the\dimexpr(#1-#2)/2}%
+	\chemmove{%
+		\node[at=(#4),yshift=(\delimvshift)]
+		{$\left\delimleft\vrule height\delimhalfdim depth\delimhalfdim
+			width0pt\right.$};%
+		\node[at=(#5),yshift=(\delimvshift)]
+		{$\left.\vrule height\delimhalfdim depth\delimhalfdim
+			width0pt\right\delimright_{\rlap{$\scriptstyle#3$}}$};}}
+\setpolymerdelim()
+\chemfig{\vphantom{CH_2}-[@{op,.75}]CH_2-CH_2-[@{cl,0.25}]}
+\makebraces[5pt,5pt]{\!\!n}{op}{cl}
+
+
 \section{Conclusion}
+
+We also succeeded in detecting the presence of hydrogen in polythene.
+
 Our measurements of resonant absorption confirmed the linear relationship predicted by \eqref{eqn: resonance condition} and \eqref{eqn: NMR resonance condition} between the magnetic field and the resonance frequency. They showed that, indeed, in both ESR and NMR, an energy splitting occurs when the sample is placed in an external field, that this creates separate energy levels such that the energy difference between them scales linearly with the applied field, and that energy transitions can be induced by supplying EM energy of the correct frequency. 
 
 An increase in the precision of our findings could have been achieved by taking further repeated measurements, as the statistical errors due to random fluctuations were quite significant, but also by using stronger $\mathbf{B}$ fields, thus increasing the energy differences between the spin states and reducing the relative uncertainty, and/or by operating at lower temperatures, both of which would have potentially resulted in sharper resonance signals with a reduced line width.
