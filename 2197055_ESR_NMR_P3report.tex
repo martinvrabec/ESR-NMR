@@ -9,24 +9,24 @@
 \author{2197055}
 
 \begin{abstract}
-Electron spin resonance (ESR) and nuclear magnetic resonance (NMR) are two important spectroscopic techniques for probing properties of materials containing constituents with non-zero permanent magnetic moments capable of resonant absorption of electromagnetic energy --- electronic systems in the case of ESR and atomic nuclei in the case of NMR. In this experiment, we studied ESR on a sample of 2,2-diphenyl-1-picrylhydrazyl (DPPH), a paramagnetic organic molecule with an unpaired $e^-$, by means of measuring the resonant frequency as a function of externally applied magnetic field, in order to determine the sample\textquoteright s $g$-factor, which was found to be $g\textsubscript{DPPH} = 2.02 \pm 0.01$.
+Electron spin resonance (ESR) and nuclear magnetic resonance (NMR) are two important spectroscopic techniques for probing properties of materials containing constituents with non-zero permanent magnetic moments capable of resonant absorption of electromagnetic energy --- electronic systems in the case of ESR and atomic nuclei in the case of NMR. In this experiment, we studied ESR on a sample of 2,2-diphenyl-1-picrylhydrazyl (DPPH), a paramagnetic organic molecule with an unpaired $e^-$, by means of measuring the resonance frequency as a function of the externally applied magnetic field, in order to determine the sample\textquoteright s $g$-factor, which was found to be $g\textsubscript{DPPH} = 2.02 \pm 0.01$.
 Further, we investigated the magnetic properties of ${}^1$H and ${}^{19}$F nuclei in the following substances: glycerine, polystyrene (both of which contain hydrogen), PTFE (which contains fluorine), and polythene, whose composition we wanted to learn about. The experimentally measured $g$-factors were $g\textsubscript{glycerine} = 5.54 \pm 0.03$, $g\textsubscript{polystyrene} = 5.68 \pm 0.01$ and $g\textsubscript{PTFE} = 5.34 \pm 0.01$. Comparison with the results obtained for polythene lead us to postulate the presence of hydrogen in our polythene sample, as confirmed by its chemical formula.
 \end{abstract}
 
 \section{Introduction}
-Electron spin resonance (ESR), also referred to as electron paramagnetic resonance (EPR) spectroscopy,      % find reference
-is an important method for studying paramagnetic chemical substances, in which the electrons' magnetic moments don't cancel, such as organic and inorganic free radicals or transition-metal ion complexes. It can provide detailed information relating to the chemical composition and structure of materials, and therefore finds innumerable applications in biology, chemistry, materials science, medicine and pharmacology, to name just a few.
+Electron spin resonance (ESR), also referred to as electron paramagnetic resonance (EPR) spectroscopy,      
+is an important method for studying paramagnetic chemical substances possessing permanent magnetic moments, such as organic and inorganic free radicals, transition-metal complexes, metals and semiconductors \cite{Lancaster}. It can yield detailed information regarding chemical composition and structure of materials, and therefore finds innumerable applications in biology, chemistry, medicine, pharmacology and materials science (e.g.\ study of radiation damage defects and mechanical stress in solids) \cite{Lancaster}, to name just a few.
 
-Similarly, nuclear magnetic resonance (NMR) exploits the fact that some nuclei possess a non-zero overall spin, and hence a permanent magnetic moment, to probe the properties of materials containing such nuclei. It has widespread use and far-reaching applications, notably in medical imaging, where it forms the basis behind MRI (magnetic resonance imaging).
+Similarly, nuclear magnetic resonance (NMR) exploits the fact that certain nuclei possess a non-zero overall spin, and hence a magnetic moment, to probe the properties of materials containing such nuclei \cite{Smith}. It has far-reaching applications \cite{Gero}, notably in medical imaging, where it forms the basis behind MRI (magnetic resonance imaging) \cite{Haidekker}.
 
 The aim of this experiment was to explore the fundamental principles underlying these two phenomena.
 
 \section{ESR}
-In the first part of the experiment, we performed an ESR study on a sample of 2,2-diphenyl-1-picrylhydrazyl (DPPH), which is a paramagnetic organic molecule with a single unpaired $e^-$. The orbital angular momentum of this electron is essentially zero,    % find reference
-and hence the molecule\textquoteright s total magnetic moment is solely due to the electron\textquoteright s intrinsic spin angular momentum, which makes it particularly suited for ESR investigations.
+In the first part of the experiment, we performed an ESR study on a sample of 2,2-diphenyl-1-picrylhydrazyl (DPPH), which is a paramagnetic organic molecule with a single unpaired $e^-$~\cite{MacLaren}. For many molecules, including DPPH, the orbital angular momentum of the electron is not significant \cite{MacLaren},
+and hence the molecule\textquoteright s total magnetic moment is solely due to the electron\textquoteright s intrinsic spin angular momentum. This makes DPPH particularly suited for ESR investigations.
  
 \subsection{Theory}\label{section: theory}
-In the absence of any external magnetic fields (i.e.\ for a free $e^-$), the two possible spin states (``spin up'' and ``spin down'') are degenerate --- they have the same energy.
+In the absence of any external magnetic fields (i.e.\ for a free $e^-$), the two possible spin states (``spin up'' and ``spin down'') are energy-degenerate.
 
 However, \emph{energy splitting} occurs when the electron is placed in a magnetic field. Indeed, the intrinsic spin gives rise to a magnetic moment $\bm{\mu}_S$ which interacts with the applied field and possesses a different energy depending on its relative spatial orientation. 
 
@@ -59,7 +59,7 @@ Equation \eqref{eqn: potential energy} shows that the two orientations ($m_s = \
 	\includegraphics[scale=0.75]{EPR_splitting.png}
 	\hspace{2pc}
 	\begin{minipage}[b]{3in}
-		\caption{Energy splitting of the two spin states of an $e^-$ placed in an external magnetic~field~$\mathbf{B_0}$.}
+		\caption{Energy splitting of the two spin states of an $e^-$ situated in an external magnetic~field~$\mathbf{B_0}$.}
 		\label{fig: energy splitting}
 	\end{minipage}
 \end{figure}
@@ -68,14 +68,14 @@ In thermal equilibrium, the spins are distributed according to the Boltzmann dis
 \[
     \frac{N_{+\tfrac12}}{N_{-\tfrac12}} = \exp(- \frac{\Delta E}{k_B T}),
 \]
-where $k_B$ is Boltzmann\textquoteright s constant, and $N_{\pm\tfrac12}$ are the number of spins in the higher and lower states, respectively. 
+where $k_B$ is Boltzmann\textquoteright s constant, and $N_{\pm\tfrac12}$ are the number of spins in the higher and lower states, respectively \cite{Gero}. 
 
-If there is a predominance of spins in the lower state, transitions can be induced by supplying energy to the sample, for instance by irradiating it with electromagnetic (EM) radiation of the right frequency $\nu$. The energy of an EM wave is $h \nu$, where $h$ is Planck's constant, so the condition for resonance, using \eqref{eqn: energy difference}, can be stated as
+If there is a predominance of spins in the lower state, transitions can be induced by supplying energy to the sample, for instance by irradiating it with electromagnetic (EM) radiation of the right frequency $\nu$. The supplied energy quantum is $h \nu$, where $h$ is Planck's constant, so the condition for resonance, using \eqref{eqn: energy difference}, can be stated as
 \begin{equation}
 	h\nu = g\mu_B B. \label{eqn: resonance condition}
 \end{equation}
 
-In a real material, an electron ``feels'' also fields produced by any surrounding magnetic nuclei and/or other electrons, whose effect can be interpreted in terms of a shift in the $g$-factor compared to the free-electron value, and in this particular experiment, we were measuring the $g$-value of DPPH. In addition, the chemical environment also has an effect on the shape of the resonance signal and its line width, amongst other things, which gives an indication of how ESR can be used to infer information about the chemical composition and structure of materials. 
+In a real material, an electron experiences also fields produced by any surrounding magnetic nuclei and/or other electrons, whose effect can be interpreted in terms of a shift in the $g$-factor compared to the free-electron value, and that lead to further energy splitting (\emph{fine} and \emph{hyperfine structure}) \cite{Lancaster}. In this particular experiment, we were measuring the $g$-value of DPPH. In addition, the chemical environment also has an effect on the shape of the resonance signal and its line width, amongst other things, which gives an indication of how ESR can be used to infer information about the chemical composition and structure of materials \cite{Lancaster}. 
 
 \subsection{Experimental method}\label{section: method}
 % Insert figure
@@ -166,14 +166,14 @@ This is slightly different from both the accepted and our experimental value for
 In the second part of the experiment, we performed NMR on protons and fluorine atoms in both liquid and solid samples, namely in glycerine and polystyrene (both containing ${}^1$H), PTFE (containing ${}^{19}$F), and polythene, about which we wanted to find out whether it is more plausible that it contains hydrogen or fluorine.
 \subsection{Theory}
 
-The basic principles of NMR are essentially the same as those of ESR. Certain atomic nuclei can have a non-zero overall nuclear spin $\mathbf{S}$ (such as ${}^1$H and ${}^{19}$F, which have an odd number of nucleons), and this gives rise to a nuclear magnetic moment $\bm{\mu}_N$. When placed in a magnetic field of strength $B_0$, whether external or due to other close-by magnetic nuclei and/or orbiting electrons, the nuclear spin can adopt $2S + 1$ possible orientations, each corresponding to a different energy level
+The basic principles of NMR are essentially the same as those of ESR. Certain atomic nuclei can have a non-zero overall nuclear spin $\mathbf{S}$ (such as ${}^1$H and ${}^{19}$F), and this gives rise to a nuclear magnetic moment $\bm{\mu}_N$ \cite{Smith, Gero}. In the presence of a magnetic field of strength $B_0$, whether external or due to other close-by magnetic nuclei and/or orbiting electrons, the nuclear spin can adopt $2S + 1$ possible orientations \cite{Gero}, each corresponding to a different energy level
 \[
 	E_n = -g \mu_n B_0 m, \quad m = -S, -S+1, \dots, 0, \dots, S, 
 \] 
 where $S$ is the spin quantum number, and $\mu_n = 5.05 \times 10^{-27} \, \si{\joule\tesla\tothe{-1}}$ is the nuclear magneton.
 The $g$-factor again depends on the chemical environment and bond structure (so-called ``chemical shift''). 
 
-All of our samples had $S = \tfrac{1}{2}$, which meant there were only two possible energy levels, and the condition for resonance was 
+Both ${}^1$H and ${}^{19}$F have $S = \tfrac{1}{2}$, which meant there were only two possible energy levels \cite{MacLaren, Gero}, and the condition for resonance was 
 \begin{equation}\label{eqn: NMR resonance condition}
 	h\nu = \Delta E = -g \mu_n B_0.
 \end{equation}
@@ -256,7 +256,8 @@ Looking at results in table \ref{table: polythene}, and judging also from the ge
 		\node[at=(#5),yshift=(\delimvshift)]
 		{$\left.\vrule height\delimhalfdim depth\delimhalfdim
 			width0pt\right\delimright_{\rlap{$\scriptstyle#3$}}$};}}
-\setpolymerdelim()
+\setpolymerdelim()
+
 \chemfig{\vphantom{CH_2}-[@{op,.75}]CH_2-CH_2-[@{cl,0.25}]}
 \makebraces[5pt,5pt]{\!\!n}{op}{cl}
 \vspace{10pt}
@@ -265,15 +266,23 @@ The accepted $g$-value for a proton is $g = 5.5856$, and for fluorine it is $g =
 
 \section{Conclusion}
 
-Our measurements of resonant absorption confirmed the linear relationship predicted by equations \eqref{eqn: resonance condition} and \eqref{eqn: NMR resonance condition} between the magnetic field and the resonant frequency. We demonstrated that, indeed, in both ESR and NMR, an energy splitting occurs when the sample is placed in an external magnetic field, that this creates separate energy levels such that the energy difference between them scales linearly with the applied field, and that energy transitions can be induced between these levels by supplying EM energy at the correct frequency. 
+In conclusion, we determined the $g$-factors of DPPH and glycerine, which agreed reasonably well with the expected values (within the limitations of our instrumentation), as well as the $g$-factors of polystyrene and PTFE. We also succeeded in detecting the presence of hydrogen in polythene using NMR. 
 
-We determined the $g$-factors of DPPH, glycerine, polystyrene and PTFE, which agreed reasonably well with the accepted and/or theoretical values, within the limitations of our apparatus, and we also succeeded in detecting the presence of hydrogen in polythene.
+An increase in the precision of our numerical findings could have been achieved, without making changes to the experimental procedure or equipment, by taking further repeated measurements for a given set of conditions, as the statistical errors due to random fluctuations turned out to be quite significant, as indicated by our standard error estimates. 
 
-An increase in the precision of our numerical findings could have been achieved by taking further repeated measurements, as the statistical errors due to random fluctuations turned out to be quite significant, as indicated by our standard error estimates. Other potential improvements to the experimental procedure would have been to use stronger $\mathbf{B}$ fields, thus increasing the energy difference between the spin states; and by operating at lower temperatures, which would have increased the difference in the number of occupied lower and upper spin states, so that more electrons/nuclei could absorb energy, resulting potentially in a stronger, better-resolved resonance signal, higher sensitivity, and a more favourable signal-to-noise ratio.
+At a more fundamental level, our measurements of resonant absorption confirmed the linear relationship predicted by equations \eqref{eqn: resonance condition} and \eqref{eqn: NMR resonance condition} between the magnetic field and the resonant frequency. We demonstrated that, indeed, in both ESR and NMR, an energy splitting occurs when the sample is subjected to an external magnetic field, that this creates separate energy levels such that the energy difference between them scales linearly with the applied field, and that energy transitions can be induced between these levels by supplying EM energy at the correct frequency, in our case using an RF coil, thus confirming the theoretical predictions. 
+
+
+%Other potential improvements to the experimental procedure would have been to use stronger $\mathbf{B}$ fields, thus increasing the energy difference between the spin states; and by operating at lower temperatures, which would have increased the difference in the number of occupied lower and upper spin states, so that more electrons/nuclei could absorb energy, resulting potentially in a stronger, better-resolved resonance signal, higher sensitivity, and a more favourable signal-to-noise ratio.
 
 \section*{References}
 \begin{thebibliography}{9}
-\bibitem{ESR review} Lancaster G 1967 Electron paramagnetic resonance (a review) \textit{J. Mat. Sci.} \textbf{2} 489-495
+\bibitem{Smith} Smith M and Strange J 1996 NMR techniques in materials physics: a review \textit{Meas. Sci. Technol.} \textbf{7} 449
+\bibitem{Lancaster} Lancaster G 1967 Electron paramagnetic resonance (a review) \textit{J. Mat. Sci.} \textbf{2} 489-95
+\bibitem{MacLaren} MacLaren I 2017 \textit{Electron spin resonance and nuclear magnetic resonance (Physics 3H Laboratory experiment information script)}, University of Glasgow
+\bibitem{Gero} Gerothanassis I, Troganis A, Exarchou V and Barbarossou K 2002 Nuclear magnetic resonance (NMR) spectroscopy:
+basic principles and phenomena, and their applications to chemistry, biology and medecine \textit{Chem. Educ.} \textbf{3} 229-52
+\bibitem{Haidekker} Haidekker M 2013 \textit{Medical Imaging Technology}, ed Babaev E \textit{et al} (New York: Springer) pp 67-96
 \end{thebibliography}
 
 \end{document}
