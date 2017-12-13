@@ -15,7 +15,7 @@ Further, we investigated the magnetic properties of ${}^1$H and ${}^{19}$F nucle
 
 \section{Introduction}
 Electron spin resonance (ESR), also referred to as electron paramagnetic resonance (EPR) spectroscopy,      
-is an important method for studying paramagnetic chemical substances possessing permanent magnetic moments, such as organic and inorganic free radicals, transition-metal complexes, metals and semiconductors \cite{Lancaster}. It can yield detailed information regarding chemical composition and structure of materials, and therefore finds innumerable applications in biology, chemistry, medicine, pharmacology and materials science (e.g.\ study of radiation damage defects and mechanical stress in solids) \cite{Lancaster}, to name just a few.
+is an important method for studying paramagnetic chemical substances possessing permanent magnetic moments, such as organic and inorganic free radicals, transition-metal complexes, metals and semiconductors \cite{Lancaster}. It can yield detailed information regarding chemical composition and structure of materials, and therefore finds innumerable applications in biology, chemistry, medicine, pharmacology and materials science (e.g.\ study of radiation damage defects and mechanical stress in solids), to name just a few \cite{Lancaster}.
 
 Similarly, nuclear magnetic resonance (NMR) exploits the fact that certain nuclei possess a non-zero overall spin, and hence a magnetic moment, to probe the properties of materials containing such nuclei \cite{Smith}. It has far-reaching applications \cite{Gero}, notably in medical imaging, where it forms the basis behind MRI (magnetic resonance imaging) \cite{Haidekker}.
 
@@ -26,9 +26,9 @@ In the first part of the experiment, we performed an ESR study on a sample of 2,
 and hence the molecule\textquoteright s total magnetic moment is solely due to the electron\textquoteright s intrinsic spin angular momentum. This makes DPPH particularly suited for ESR investigations.
  
 \subsection{Theory}\label{section: theory}
-In the absence of any external magnetic fields (i.e.\ for a free $e^-$), the two possible spin states (``spin up'' and ``spin down'') are energy-degenerate.
+In the absence of any external magnetic fields (i.e.\ for a free $e^-$), the two possible spin states (``spin up'' and ``spin down'') are energy-degenerate \cite{Yadav}.
 
-However, \emph{energy splitting} occurs when the electron is placed in a magnetic field. Indeed, the intrinsic spin gives rise to a magnetic moment $\bm{\mu}_S$ which interacts with the applied field and possesses a different energy depending on its relative spatial orientation. 
+However, \emph{energy splitting} occurs when the electron is placed in a magnetic field. Indeed, the intrinsic spin gives rise to a magnetic moment $\bm{\mu}_S$ which interacts with the applied field and possesses a different energy depending on its relative spatial orientation \cite{Yadav}. 
 
 According to quantum mechanics, only two configurations are possible. The magnitude $S$ of the spin vector $\mathbf{S}$, and its two allowed $z$-components $S_z$ (where the $z$-axis is defined to lie along the direction of the field), are respectively given by
 \begin{align}
@@ -41,13 +41,13 @@ The associated magnetic moment is
 \begin{align}
 	\bm{\mu}_S = - g \frac{\mu_B}{\hbar} \mathbf{S} \label{eqn: magnetic moment}
 \end{align}
-where $g$ is the Land\'e splitting factor, or $g$-factor (which for a free electron has the value $g_e = 2.002319$), and $\mu_B = 9.274 \times 10^{-24} \si{\joule\per\tesla}$ is the Bohr magneton. 
+where $g$ is the Land\'e splitting factor, or $g$-factor (which for a free electron has the value $g_e = 2.002319$), and $\mu_B = 9.274 \times 10^{-24} \, \si{\joule\per\tesla}$ is the Bohr magneton. 
 
 A magnetic moment $\bm{\mu}_S$ in a field $\mathbf{B} = B \, \mathbf{e_z}$ (where $\mathbf{e_z}$ is the unit vector in the $z$-direction) has potential energy
 \begin{equation}
 	E = - \bm{\mu}_S \cdot \mathbf{B} \underset{\text{\eqref{eqn: magnetic moment}}}{=}  - (- g \frac{\mu_B}{\hbar} \mathbf{S})\cdot\mathbf{B}
-	  \underset{\text{\eqref{eqn: magnetic moment z-projection}}}{=} g \frac{\mu_B}{\hbar}S_z B 
-	  = g\mu_Bm_sB \label{eqn: potential energy}.
+	  = g \frac{\mu_B}{\hbar}S_z B 
+	  \underset{\text{\eqref{eqn: magnetic moment z-projection}}}{=} g\mu_Bm_sB \label{eqn: potential energy}.
 \end{equation}
 
 Equation \eqref{eqn: potential energy} shows that the two orientations ($m_s = \pm\tfrac12$) no longer have the same energy --- the one whose magnetic moment is aligned with the field (or equivalently whose spin points in the direction opposite to the field, i.e.\ $m_s = -\tfrac12$) has a lower potential energy than the one whose magnetic moment is anti-parallel to the field, as depicted in figure \ref{fig: energy splitting}. The energy difference between the two levels is 
@@ -75,7 +75,7 @@ If there is a predominance of spins in the lower state, transitions can be induc
 	h\nu = g\mu_B B. \label{eqn: resonance condition}
 \end{equation}
 
-In a real material, an electron experiences also fields produced by any surrounding magnetic nuclei and/or other electrons, whose effect can be interpreted in terms of a shift in the $g$-factor compared to the free-electron value, and that lead to further energy splitting (\emph{fine} and \emph{hyperfine structure}) \cite{Lancaster}. In this particular experiment, we were measuring the $g$-value of DPPH. In addition, the chemical environment also has an effect on the shape of the resonance signal and its line width, amongst other things, which gives an indication of how ESR can be used to infer information about the chemical composition and structure of materials \cite{Lancaster}. 
+In a real material, an electron experiences also fields produced by any surrounding magnetic nuclei and/or other electrons, whose effect can be interpreted in terms of a shift in the $g$-factor compared to the free-electron value, and that lead to further energy splitting (\emph{fine} and \emph{hyperfine structure}) \cite{Lancaster, Ball}. In this particular experiment, we were measuring the $g$-value of DPPH. In addition, the chemical environment also has an effect on the shape of the resonance signal and its line width, amongst other things, which gives an indication of how ESR can be used to infer information about the chemical composition and structure of materials \cite{Lancaster}. 
 
 \subsection{Experimental method}\label{section: method}
 % Insert figure
@@ -83,7 +83,7 @@ A magnetic field was generated by two parallel vertically-positioned Helmholtz c
 
 For an $e^-$ with only two possible spin states, it would be necessary to match the RF frequency and the current in the coils with considerable accuracy to obtain resonance. Furthermore, once the population of the spin states has been inverted, the sample can no longer absorb more energy before enough electrons have returned to the lower state, which means that the excitation rate needed to be slower than the \emph{relaxation time} that it takes the electrons to return to thermal equilibrium via spin-spin and spin-lattice interactions. 
 
-A solution to both issues was to superimpose a ($50 \si{\hertz}$) modulation AC current on the DC component going into the coils, resulting in a sinusoidally-varying total field $\mathbf{B}_{total}(t)$ oscillating around a central value $B_0$. If the resonance condition \eqref{eqn: resonance condition} was satisfied for some value of $\mathbf{B}_{total}$ during this oscillation, a resonance signal was observed, twice during the cycle, at symmetric positions (provided that the phase lag between the modulation and the sample response was taken into account). 
+A solution to both issues was to superimpose a ($50 \, \si{\hertz}$) modulation AC current on the DC component going into the coils, resulting in a sinusoidally-varying total field $\mathbf{B}_{total}(t)$ oscillating around a central value $B_0$. If the resonance condition \eqref{eqn: resonance condition} was satisfied for some value of $\mathbf{B}_{total}$ during this oscillation, a resonance signal was observed, twice during the cycle, at symmetric positions (provided that the phase lag between the modulation and the sample response was taken into account). 
 
 By adjusting the DC current, it was possible to make the resonance occur at the point in the cycle when the modulating field dropped to zero, so that it was precisely this $B_0$ that was satisfying the condition \eqref{eqn: resonance condition}; and we performed a calibration of the coils, using a Hall probe sensor, to be able to deduce the value of $B_0$ from the DC current flowing through them, which was directly measurable. 
 
@@ -91,7 +91,7 @@ By adjusting the DC current, it was possible to make the resonance occur at the 
 The relevant results are summarized in the following two subsections.
 
 \subsubsection{Helmholtz coils calibration.} \label{section: calibration}
-We varied the DC current in the Helmholtz coils and recorded the magnetic field at the centre. Since quite large fluctuations were observed in the field for a given current, 5 different readings were taken and averaged. For the purposes of error analysis, the uncertainty in the mean field was taken to be half the spread of the observed values, and for the current, half the smallest scale division. 
+We varied the DC current in the Helmholtz coils and recorded the magnetic field at the centre. Since quite large fluctuations were observed in the field for a given current, five different readings were taken and averaged. For the purposes of error analysis, the uncertainty in the mean field was taken to be half the spread of the observed values, and for the current, half the smallest scale division. 
 
 We subsequently performed a weighted least-squares straight-line fit to the data. Figure \ref{fig: HC calibration curve} shows the resulting calibration curve with uncertainties indicated by error bars. The line of best fit was 
 \[
@@ -143,7 +143,7 @@ For a pair of Helmholtz coils separated by a distance equal to their radius, the
 \[
 	B_0 = \mu_0 \left(\frac45\right)^{\tfrac32} \frac{n}{r} I,
 \]
-where $\mu = 4\pi\times10^{-7} \; \si{\volt\s\ampere\tothe{-1}\meter\tothe{-1}}$, $n$ is the number of turns per coil, and $r$ is their radius.
+where $\mu_0 = 4\pi\times10^{-7} \; \si{\volt\s\ampere\tothe{-1}\meter\tothe{-1}}$, $n$ is the number of turns per coil, and $r$ is their radius.
 
 This shows that the expected relationship between $I$ and $B_0$ is linear, as confirmed by our data (see figure \ref{fig: HC calibration curve}).
 However, for our particular coils, the expected value of the gradient was $4.23$, which does not agree with the one we obtained experimentally, i.e.\ $3.73 \pm 0.01$. This could be due to the fact that the separation of the coils might not have been exactly equal to their radius. Due to such possible differences in our set-up from the idealised case, we used the experimentally obtained calibration curve in subsequent calculations, not the theoretical one. Any error in the calibration curve therefore represents a systematic error in the results obtained thereafter.
@@ -166,16 +166,16 @@ This is slightly different from both the accepted and our experimental value for
 In the second part of the experiment, we performed NMR on protons and fluorine atoms in both liquid and solid samples, namely in glycerine and polystyrene (both containing ${}^1$H), PTFE (containing ${}^{19}$F), and polythene, about which we wanted to find out whether it is more plausible that it contains hydrogen or fluorine.
 \subsection{Theory}
 
-The basic principles of NMR are essentially the same as those of ESR. Certain atomic nuclei can have a non-zero overall nuclear spin $\mathbf{S}$ (such as ${}^1$H and ${}^{19}$F), and this gives rise to a nuclear magnetic moment $\bm{\mu}_N$ \cite{Smith, Gero}. In the presence of a magnetic field of strength $B_0$, whether external or due to other close-by magnetic nuclei and/or orbiting electrons, the nuclear spin can adopt $2S + 1$ possible orientations \cite{Gero}, each corresponding to a different energy level
+The basic principles of NMR are essentially the same as those of ESR. Certain atomic nuclei can have a non-zero overall nuclear spin $\mathbf{S}$ (such as ${}^1$H and ${}^{19}$F), and this gives rise to a nuclear magnetic moment $\bm{\mu}_N$ \cite{Smith, Gero}. In the presence of a magnetic field of strength $B_0$, whether external or due to other close-by magnetic nuclei and/or orbiting electrons, the nuclear spin can adopt $2S + 1$ possible orientations \cite{Gero, Ball}, each corresponding to a different energy level
 \[
 	E_n = -g \mu_n B_0 m, \quad m = -S, -S+1, \dots, 0, \dots, S, 
 \] 
 where $S$ is the spin quantum number, and $\mu_n = 5.05 \times 10^{-27} \, \si{\joule\tesla\tothe{-1}}$ is the nuclear magneton.
-The $g$-factor again depends on the chemical environment and bond structure (so-called ``chemical shift''). 
+The $g$-factor again depends on the chemical environment and bond structure (so-called ``chemical shift'')~\cite{Ball}. 
 
 Both ${}^1$H and ${}^{19}$F have $S = \tfrac{1}{2}$, which meant there were only two possible energy levels \cite{MacLaren, Gero}, and the condition for resonance was 
 \begin{equation}\label{eqn: NMR resonance condition}
-	h\nu = \Delta E = -g \mu_n B_0.
+	h\nu = \Delta E = g \mu_n B_0.
 \end{equation}
 
 
@@ -282,7 +282,9 @@ At a more fundamental level, our measurements of resonant absorption confirmed t
 \bibitem{MacLaren} MacLaren I 2017 \textit{Electron spin resonance and nuclear magnetic resonance (Physics 3H Laboratory experiment information script)}, University of Glasgow
 \bibitem{Gero} Gerothanassis I, Troganis A, Exarchou V and Barbarossou K 2002 Nuclear magnetic resonance (NMR) spectroscopy:
 basic principles and phenomena, and their applications to chemistry, biology and medecine \textit{Chem. Educ.} \textbf{3} 229-52
-\bibitem{Haidekker} Haidekker M 2013 \textit{Medical Imaging Technology}, ed Babaev E \textit{et al} (New York: Springer) pp 67-96
+\bibitem{Haidekker} Haidekker M 2013 \textit{Medical Imaging Technology} ed Babaev E \textit{et al} (New York: Springer) pp 67-96
+\bibitem{Ball} Ball D 2006 \textit{Field Guide to Spectroscopy} (SPIE) pp 83-6
+\bibitem{Yadav} Yadav L 2005 \textit{Organic spectroscopy} (Springer) pp 224-49
 \end{thebibliography}
 
 \end{document}
