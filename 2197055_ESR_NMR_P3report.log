@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.10)  14 DEC 2017 01:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.10)  14 DEC 2017 12:49
 entering extended mode
 **./2197055_ESR_NMR_P3report.tex
 (2197055_ESR_NMR_P3report.tex
@@ -1052,25 +1052,21 @@ Overfull \hbox (15.07013pt too wide) in paragraph at lines 241--247
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[6]
-Overfull \vbox (56.30911pt too high) has occurred while \output is active []
-
-
-[7 <./NMR_calibration_nocaption_nolegend_red-eps-converted-to.pdf> <./NMR_reson
-ances-eps-converted-to.pdf>] [8] (2197055_ESR_NMR_P3report.aux)
+[6] [7 <./NMR_calibration_nocaption_nolegend_red-eps-converted-to.pdf> <./NMR_r
+esonances-eps-converted-to.pdf>] [8] (2197055_ESR_NMR_P3report.aux)
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.78749pt have occurred.
 
  ) 
 Here is how much of TeX's memory you used:
- 24076 strings out of 493335
- 504561 string characters out of 3139230
- 510041 words of memory out of 3000000
- 27284 multiletter control sequences out of 15000+200000
+ 24077 strings out of 493335
+ 504579 string characters out of 3139230
+ 510050 words of memory out of 3000000
+ 27285 multiletter control sequences out of 15000+200000
  545364 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,19n,81p,10409b,1035s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,21n,81p,10409b,1039s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Program Files/MiKTe
@@ -1090,7 +1086,7 @@ sfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 2197055_ESR_NMR_P3report.pdf (8 pages, 747414 bytes).
+Output written on 2197055_ESR_NMR_P3report.pdf (8 pages, 745016 bytes).
 PDF statistics:
  135 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
