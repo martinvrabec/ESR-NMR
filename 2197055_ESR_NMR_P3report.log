@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.10)  13 DEC 2017 23:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.6.10)  13 DEC 2017 23:59
 entering extended mode
 **./2197055_ESR_NMR_P3report.tex
 (2197055_ESR_NMR_P3report.tex
@@ -938,19 +938,19 @@ LaTeX Font Warning: Font shape `OT1/cmr/bx/n' in size <18.06749> not available
 EPR_splitting.png, id=19, 301.125pt x 210.7875pt>
 File: EPR_splitting.png Graphic file (type png)
  <use EPR_splitting.png>
-Package pdftex.def Info: EPR_splitting.png used on input line 59.
+Package pdftex.def Info: EPR_splitting.png used on input line 70.
 (pdftex.def)             Requested size: 225.84319pt x 158.09024pt.
 
-Underfull \hbox (badness 1097) in paragraph at lines 62--62
+Underfull \hbox (badness 1097) in paragraph at lines 73--73
 []\OT1/cmr/bx/n/10.95 Figure 1. \OT1/cmr/m/n/10.95 Energy splitting of the two
  []
 
 
-Overfull \hbox (16.27577pt too wide) in paragraph at lines 59--65
+Overfull \hbox (16.27577pt too wide) in paragraph at lines 70--76
 [][]   [] 
  []
 
-[2 <./EPR_splitting.png>] [3]
+[2] [3 <./EPR_splitting.png>]
 Package epstopdf Info: Source file: <ESR_calibration.eps>
 (epstopdf)                    date: 2017-12-11 20:27:47
 (epstopdf)                    size: 28194 bytes
@@ -1007,7 +1007,7 @@ Package epstopdf Info: Source file: <NMR_calibration_nocaption_nolegend_red.eps
 (epstopdf)                    size: 10363 bytes
 (epstopdf)             Command: <epstopdf --outfile=NMR_calibration_nocaption_n
 olegend_red-eps-converted-to.pdf NMR_calibration_nocaption_nolegend_red.eps>
-(epstopdf)             \includegraphics on input line 220.
+(epstopdf)             \includegraphics on input line 233.
 Package epstopdf Info: Output file is already uptodate.
 
 <NMR_calibration_nocaption_nolegend_red-eps-converted-to.pdf, id=50, 421.575pt 
@@ -1017,12 +1017,15 @@ File: NMR_calibration_nocaption_nolegend_red-eps-converted-to.pdf Graphic file
 
 <use NMR_calibration_nocaption_nolegend_red-eps-converted-to.pdf>
 Package pdftex.def Info: NMR_calibration_nocaption_nolegend_red-eps-converted-t
-o.pdf used on input line 220.
-(pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
+o.pdf used on input line 233.
+(pdftex.def)             Requested size: 282.45377pt x 211.84033pt.
 
-Overfull \hbox (22.28441pt too wide) in paragraph at lines 220--221
-[][] 
+Overfull \hbox (72.88635pt too wide) in paragraph at lines 233--239
+[][]   [] 
  []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 Package epstopdf Info: Source file: <NMR_resonances.eps>
 (epstopdf)                    date: 2017-12-11 20:27:49
@@ -1032,24 +1035,27 @@ Package epstopdf Info: Source file: <NMR_resonances.eps>
 (epstopdf)                    size: 14102 bytes
 (epstopdf)             Command: <epstopdf --outfile=NMR_resonances-eps-converte
 d-to.pdf NMR_resonances.eps>
-(epstopdf)             \includegraphics on input line 226.
+(epstopdf)             \includegraphics on input line 241.
 Package epstopdf Info: Output file is already uptodate.
 <NMR_resonances-eps-converted-to.pdf, id=51, 421.575pt x 316.18124pt>
 File: NMR_resonances-eps-converted-to.pdf Graphic file (type pdf)
 
 <use NMR_resonances-eps-converted-to.pdf>
 Package pdftex.def Info: NMR_resonances-eps-converted-to.pdf used on input line
- 226.
-(pdftex.def)             Requested size: 231.86696pt x 173.9002pt.
+ 241.
+(pdftex.def)             Requested size: 282.45377pt x 211.84033pt.
 
-Overfull \hbox (7.82953pt too wide) in paragraph at lines 226--227
-[][] 
+Underfull \hbox (badness 4872) in paragraph at lines 244--244
+\OT1/cmr/m/n/10.95 of applied magnetic field for glycerine,
  []
 
 
-Overfull \hbox (1.24257pt too wide) in paragraph at lines 219--230
+Overfull \hbox (72.88635pt too wide) in paragraph at lines 241--247
 [][]   [] 
  []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [6] [7 <./NMR_calibration_nocaption_nolegend_red-eps-converted-to.pdf> <./NMR_r
 esonances-eps-converted-to.pdf>] [8] (2197055_ESR_NMR_P3report.aux)
@@ -1061,7 +1067,7 @@ LaTeX Font Warning: Size substitutions with differences
 Here is how much of TeX's memory you used:
  24076 strings out of 493335
  504588 string characters out of 3139230
- 511040 words of memory out of 3000000
+ 510040 words of memory out of 3000000
  27284 multiletter control sequences out of 15000+200000
  545364 words of font info for 78 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1086,7 +1092,7 @@ b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on 2197055_ESR_NMR_P3report.pdf (8 pages, 315475 bytes).
+Output written on 2197055_ESR_NMR_P3report.pdf (8 pages, 315062 bytes).
 PDF statistics:
  138 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

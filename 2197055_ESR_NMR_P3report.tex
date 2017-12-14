@@ -9,8 +9,8 @@
 \author{2197055}
 
 \begin{abstract}
-Electron spin resonance (ESR) and nuclear magnetic resonance (NMR) are two important spectroscopic techniques for probing properties of materials containing constituents with non-zero permanent magnetic moments capable of resonant absorption of electromagnetic energy --- electronic systems in the case of ESR and atomic nuclei in the case of NMR. In this experiment, we studied ESR on a sample of 2,2-diphenyl-1-picrylhydrazyl (DPPH), a paramagnetic organic molecule with an unpaired $e^-$, by means of measuring the resonance frequency as a function of the externally applied magnetic field, in order to determine the sample\textquoteright s $g$-factor, which was found to be $g\textsubscript{DPPH} = 2.02 \pm 0.01$.
-Further, we investigated the magnetic properties of ${}^1$H and ${}^{19}$F nuclei in the following substances: glycerine, polystyrene (both of which contain hydrogen), PTFE (which contains fluorine), and polythene, whose composition we wanted to learn about. The experimentally measured $g$-factors were $g\textsubscript{glycerine} = 5.54 \pm 0.03$, $g\textsubscript{polystyrene} = 5.68 \pm 0.01$ and $g\textsubscript{PTFE} = 5.34 \pm 0.01$. Comparison with the results obtained for polythene lead us to postulate the presence of hydrogen in our polythene sample, as confirmed by its chemical formula.
+Electron spin resonance (ESR) and nuclear magnetic resonance (NMR) are two important spectroscopic techniques for probing properties of materials containing constituents with non-zero permanent magnetic moments capable of resonant absorption of electromagnetic energy --- electronic systems in the case of ESR and atomic nuclei in the case of NMR. In this experiment, we studied ESR on a sample of 2,2-diphenyl-1-picrylhydrazyl (DPPH), a~paramagnetic organic molecule with an unpaired $e^-$, by means of measuring the resonance frequency as a function of the externally applied magnetic field, in order to determine the~sample\textquoteright s $g$-factor, which was found to be $g\textsubscript{DPPH} = 2.02 \pm 0.01$.
+Further, we investigated the~magnetic properties of ${}^1$H and ${}^{19}$F nuclei in the following substances: glycerine, polystyrene (both of which contain hydrogen), PTFE (which contains fluorine), and polythene, whose composition we wanted to learn about. The experimentally measured $g$-factors were $g\textsubscript{glycerine} = 5.54 \pm 0.03$, $g\textsubscript{polystyrene} = 5.68 \pm 0.01$ and $g\textsubscript{PTFE} = 5.34 \pm 0.01$. Comparison with the results obtained for polythene lead us to postulate the presence of hydrogen in our polythene sample, as confirmed by its chemical formula.
 \end{abstract}
 
 \section{Introduction}
@@ -55,7 +55,18 @@ Equation \eqref{eqn: potential energy} shows that the two orientations ($m_s = \
 	\Delta E = g \mu_B B. \label{eqn: energy difference}
 \end{equation}
 
-\begin{figure}[htbp]
+In thermal equilibrium, the spins are distributed according to the Boltzmann distribution
+\[
+    \frac{N_{+\tfrac12}}{N_{-\tfrac12}} = \exp(- \frac{\Delta E}{k_B T}),
+\]
+where $k_B$ is Boltzmann\textquoteright s constant, and $N_{\pm\tfrac12}$ are the number of spins in the higher and lower states, respectively \cite{Gero}. 
+
+If more spins are in the lower state, transitions can be induced by supplying energy to the sample, for instance by irradiating it with electromagnetic (EM) radiation of the right frequency~$\nu$. The supplied energy quantum is $h \nu$, where $h$ is Planck's constant, so the condition for resonance, using \eqref{eqn: energy difference}, can be stated as
+\begin{equation}
+	h\nu = g\mu_B B. \label{eqn: resonance condition}
+\end{equation}
+
+\begin{figure}[t!]
 	\includegraphics[scale=0.75]{EPR_splitting.png}
 	\hspace{2pc}
 	\begin{minipage}[b]{3in}
@@ -63,17 +74,6 @@ Equation \eqref{eqn: potential energy} shows that the two orientations ($m_s = \
 		\label{fig: energy splitting}
 	\end{minipage}
 \end{figure}
-
-In thermal equilibrium, the spins are distributed according to the Boltzmann distribution
-\[
-    \frac{N_{+\tfrac12}}{N_{-\tfrac12}} = \exp(- \frac{\Delta E}{k_B T}),
-\]
-where $k_B$ is Boltzmann\textquoteright s constant, and $N_{\pm\tfrac12}$ are the number of spins in the higher and lower states, respectively \cite{Gero}. 
-
-If there is a predominance of spins in the lower state, transitions can be induced by supplying energy to the sample, for instance by irradiating it with electromagnetic (EM) radiation of the right frequency $\nu$. The supplied energy quantum is $h \nu$, where $h$ is Planck's constant, so the condition for resonance, using \eqref{eqn: energy difference}, can be stated as
-\begin{equation}
-	h\nu = g\mu_B B. \label{eqn: resonance condition}
-\end{equation}
 
 In a real material, an electron experiences also fields produced by any surrounding magnetic nuclei and/or other electrons, whose effect can be interpreted in terms of a shift in the $g$-factor compared to the free-electron value, and that lead to further energy splitting (\emph{fine} and \emph{hyperfine structure}) \cite{Lancaster, Ball}. In this particular experiment, we were measuring the $g$-value of DPPH. In addition, the chemical environment also has an effect on the shape of the resonance signal and its line width, amongst other things, which gives an indication of how ESR can be used to infer information about the chemical composition and structure of materials \cite{Lancaster}. 
 
@@ -93,7 +93,7 @@ The relevant results are summarized in the following two subsections.
 \subsubsection{Helmholtz coils calibration.} \label{section: calibration}
 We varied the DC current in the Helmholtz coils and recorded the magnetic field at the centre. Since quite large fluctuations were observed in the field for a given current, five different readings were taken and averaged. For the purposes of error analysis, the uncertainty in the mean field was taken to be half the spread of the observed values, and for the current, half the smallest scale division. 
 
-We subsequently performed a weighted least-squares straight-line fit to the data. Figure \ref{fig: HC calibration curve} shows the resulting calibration curve with uncertainties indicated by error bars. The line of best fit was 
+We subsequently performed a weighted least-squares straight-line fit to the data. Figure \ref{fig: HC calibration curve} shows the resulting calibration curve with uncertainties indicated by error bars. The line of best~fit~was 
 \[
 B_0 = (3.73 \pm 0.01) I + (0.03 \pm 0.01),
 \]
@@ -118,7 +118,7 @@ The frequency in the RF oscillator circuit was varied in steps of $5 \, \si{\meg
 \end{figure}
 
 \subsection{Analysis}
-According to equation \eqref{eqn: resonance condition}, the plot of frequency $\nu$ against magnetic field $B_0$ should be a straight line with gradient 
+According to equation \eqref{eqn: resonance condition}, the plot of frequency $\nu$ against magnetic field $B_0$ should be a~straight line with gradient 
 \[
 	\frac{\nu}{B_0} = \frac{g_{\textsubscript{DPPH}} \mu_B}{h},
 \]
@@ -180,7 +180,7 @@ Both ${}^1$H and ${}^{19}$F have $S = \tfrac{1}{2}$, which meant there were only
 
 
 \subsection{Experimental method}
-The experimental procedure was completely analogous to the ESR part of the experiment (see section \ref{section: method}). The only difference was that the static magnetic field was generated by an iron-cored electromagnet, instead of Helmholtz coils, and the modulating field was produced by a pair of smaller attached modulation coils.
+The experimental procedure was completely analogous to the ESR part of the experiment (see section \ref{section: method}). The only difference was that the static magnetic field was generated by an iron-cored electromagnet, instead of Helmholtz coils, and the modulating field was produced by a~pair of smaller attached modulation coils.
 
 
 \subsection{Results}
@@ -199,7 +199,7 @@ Figure \ref{fig: NMR resonances} shows the graphs of resonance frequencies as a 
 
 Due to time constraints, we didn't manage to collect enough data points for polythene to be able to perform a fit and determine its $g$-factor. However, we did find the resonant frequency for a few values of the current, and compared the results with the other 3 substances, in order to ascertain whether polythene was more likely to contain hydrogen or fluorine. Table \ref{table: polythene} shows as example one particular value of the current.
 
-\begin{table}
+\begin{table}[htbp]
 	\caption{\label{table: polythene} Resonant frequency for $I = 3.318 \, \si{\ampere}$.}
 	\begin{center}
 		\begin{tabular}{ll}
@@ -215,26 +215,45 @@ Due to time constraints, we didn't manage to collect enough data points for poly
 	\end{center}
 \end{table}
 
-\begin{figure}[htbp]
-	\begin{minipage}[b]{2.9in}
-		\includegraphics[scale=0.55]{NMR_calibration_nocaption_nolegend_red.eps}
+%\begin{figure}[htbp]
+%	\begin{minipage}[b]{2.9in}
+%		\includegraphics[scale=0.55]{NMR_calibration_nocaption_nolegend_red.eps}
+%		\caption{Magnetic field against current inside the electromagnet. The lower part corresponds to decreasing current, and the part with a quadratic fit through it is for increasing current.}
+%		\label{fig: hysteresis curve}
+%	\end{minipage}
+%	\hspace{1.5pc}
+%	\begin{minipage}[b]{3.1in}
+%		\includegraphics[scale=0.55]{NMR_resonances.eps}
+%		\caption{Resonant frequency as a function of applied magnetic field for glycerine, polystyrene and PTFE.}
+%		\label{fig: NMR resonances}
+%	\end{minipage}
+%\end{figure}
+
+\begin{figure}[h!]
+	\includegraphics[scale=0.67]{NMR_calibration_nocaption_nolegend_red.eps}
+	\hspace{2pc}
+	\begin{minipage}[b]{3in}
 		\caption{Magnetic field against current inside the electromagnet. The lower part corresponds to decreasing current, and the part with a quadratic fit through it is for increasing current.}
 		\label{fig: hysteresis curve}
 	\end{minipage}
-	\hspace{1.5pc}
-	\begin{minipage}[b]{3.1in}
-		\includegraphics[scale=0.55]{NMR_resonances.eps}
+\end{figure}
+\begin{figure}[h!]
+	\includegraphics[scale=0.67]{NMR_resonances.eps}
+	\hspace{2pc}
+	\begin{minipage}[b]{3in}
 		\caption{Resonant frequency as a function of applied magnetic field for glycerine, polystyrene and PTFE.}
 		\label{fig: NMR resonances}
 	\end{minipage}
 \end{figure}
 
 \subsection{Analysis}
-According to \eqref{eqn: NMR resonance condition}, $\left| \nu / B_0 \right|$ should be a constant, equal to $g \mu_n/h$. It follows that $ g = \frac{h}{\mu_n} \left( \frac{\nu}{B_0} \right)$. We performed a straight-line fit to our plots in figure \ref{fig: NMR resonances}, and got
+According to \eqref{eqn: NMR resonance condition}, $\nu / B_0$ should be a constant, equal to $g \mu_n/h$. It follows that $ g = \frac{h}{\mu_n} \left( \frac{\nu}{B_0} \right)$. We performed a straight-line fit to our plots in figure \ref{fig: NMR resonances}, and got
 \begin{alignat*}{2}
     &\left( \frac{\nu}{B_0} \right)_{\text{glycerine}} &&= 0.0422 \pm 0.0002 \; \si{\mega\hertz\per\milli\tesla} \\
 	&g\textsubscript{glycerine} &&= 5.54 \pm 0.03 \\[12pt]
-	&\left( \frac{\nu}{B_0} \right)_{\text{polystyrene}} &&= 0.0433 \pm 0.0001 \; \si{\mega\hertz\per\milli\tesla} \\
+\end{alignat*}
+\begin{alignat*}{2}
+    &\left( \frac{\nu}{B_0} \right)_{\text{polystyrene}} &&= 0.0433 \pm 0.0001 \; \si{\mega\hertz\per\milli\tesla} \\
 	&g\textsubscript{polystyrene} &&= 5.68 \pm 0.01 \\[12pt]
 	&\left( \frac{\nu}{B_0} \right)_{\text{PTFE}} &&= 0.0407 \pm 0.0001 \; \si{\mega\hertz\per\milli\tesla} \\
 	&g\textsubscript{PTFE} &&= 5.34 \pm 0.01 \\
@@ -280,8 +299,7 @@ At a more fundamental level, our measurements of resonant absorption confirmed t
 \bibitem{Smith} Smith M and Strange J 1996 NMR techniques in materials physics: a review \textit{Meas. Sci. Technol.} \textbf{7} 449
 \bibitem{Lancaster} Lancaster G 1967 Electron paramagnetic resonance (a review) \textit{J. Mat. Sci.} \textbf{2} 489-95
 \bibitem{MacLaren} MacLaren I 2017 \textit{Electron spin resonance and nuclear magnetic resonance (Physics 3H Laboratory experiment information script)}, University of Glasgow
-\bibitem{Gero} Gerothanassis I, Troganis A, Exarchou V and Barbarossou K 2002 Nuclear magnetic resonance (NMR) spectroscopy:
-basic principles and phenomena, and their applications to chemistry, biology and medecine \textit{Chem. Educ.} \textbf{3} 229-52
+\bibitem{Gero} Gerothanassis I \textit{et al} K 2002 Nuclear magnetic resonance (NMR) spectroscopy \textit{Chem. Educ.} \textbf{3} 229-52
 \bibitem{Haidekker} Haidekker M 2013 \textit{Medical Imaging Technology} ed Babaev E \textit{et al} (New York: Springer) pp 67-96
 \bibitem{Ball} Ball D 2006 \textit{Field Guide to Spectroscopy} (SPIE) pp 83-6
 \bibitem{Yadav} Yadav L 2005 \textit{Organic spectroscopy} (Springer) pp 224-49
